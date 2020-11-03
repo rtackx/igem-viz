@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="utf-8" http-equiv="encoding">
+
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script type="text/javascript">
+    	d3 = require('d3');
+    	d3geo = require('d3-geo-projection');
+    	topojson = require ("topojson-client@3");
+    	world = d3.json("https://unpkg.com/world-atlas@1/world/50m.json");
+    	countries = topojson.feature(world, world.objects.countries);
+		path = ƒ(t)
+		projection = ƒ(n)
+
+    	height = 500;
+
+    	svg = {
+  			const svg = d3.select(DOM.svg(width, height))
+  			const g = svg.append("g");
+
+			g.selectAll("path")
+			.data(countries.features)
+			.enter()
+			.append("path")
+			.attr("d", d=>path(d))
+			.style('fill', '#B6C8E3')
+			.style('stroke', 'white')
+			.style('stroke-width', '1.5px')
+	  
+	  		return svg.node()
+		}
+
+		canvas= {
+			const canvas = DOM.canvas(width,height);
+			const ctx = canvas.getContext('2d');
+			countries.features.forEach(d=> {  
+				const p = new Path2D(path(d))
+				ctx.fillStyle = '#B6C8E3';
+				ctx.strokeStyle = "white";
+				ctx.fill(p);  
+				ctx.stroke(p);
+				});
+		
+			return canvas;
+		}
+		
+
+    </script>
+
+  </head>
+  <body></body>
+</html>
