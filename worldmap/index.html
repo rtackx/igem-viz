@@ -9,7 +9,7 @@ import define from "./index.js";
 import {Runtime, Library, Inspector} from "./runtime.js";
 
 const runtime = new Runtime();
-const main = runtime.module(define);
+const main = runtime.module(define, document.body);
 // , Inspector.into(document.body));
 
 </script>
