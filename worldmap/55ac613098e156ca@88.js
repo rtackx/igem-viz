@@ -63,7 +63,7 @@ require('d3-geo-projection')
   main.variable(observer("d3")).define("d3", ["require"], function(require){return(
 require('d3')
 )});
-  main.variable(observer()).define("labels", function(){return(
+  main.variable(observer("labels")).define("labels", function(){return(
 [
   "United States",
   "India",
