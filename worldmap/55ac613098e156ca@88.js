@@ -65,15 +65,13 @@ require('d3')
 )});
   main.variable(observer("labels")).define("labels", function(){return(
 [
-  "Mexico",
+  "United States",
+  "India",
+  "Estonia",
   "France",
-  "Haiti",
-  "Bolivia",
-  "Palestine",
-  "Syria",
-  "Algeria",
-  "Indonesia",
-  "Ecuador"]
+  "Taiwan",
+  "Japan",
+  "Greece"]
 )});
   return main;
 }
