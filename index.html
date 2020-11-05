@@ -6,7 +6,21 @@
     <meta content="utf-8" http-equiv="encoding">
 
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+    import define from "https://api.observablehq.com/@n3/bipartite-network-of-teams.js?v=3";
+    (new Runtime).module(define, name => {
+      if (name === "viewof order") return Inspector.into(".viewof-order")();
+      if (name === "viewof orderHouse") return Inspector.into(".viewof-orderHouse")();
+      if (name === "chart") return Inspector.into(".chart")();
+    });
+    </script>
   </head>
-  <body></body>
+  <body>
+    <div class="viewof-order"></div>
+    <div class="viewof-orderHouse"></div>
+    <div class="chart"></div>
+    <p>Bipartite Network of Teams</p>
+
+  </body>
 </html>
