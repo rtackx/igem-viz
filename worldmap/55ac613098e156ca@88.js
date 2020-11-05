@@ -8,9 +8,9 @@ md`# World map example`
   const container = document.createElement("div")
   container.setAttribute("id", "map-container")
   container.style.position = "relative"
-  
+
   container.appendChild(worldMap.node())
-    
+
   return container
 }
 );
@@ -20,7 +20,7 @@ md`# World map example`
   main.variable(observer("worldMap")).define("worldMap", ["d3","DOM","width","height","topojson","world","path","labels"], function(d3,DOM,width,height,topojson,world,path,labels)
 {
   const svg = d3.select(DOM.svg(width, height))
-  
+
   // world map
   svg.append("g").selectAll("path")
     .data(topojson.feature(world, world.objects.countries).features)
@@ -37,7 +37,7 @@ md`# World map example`
     .style('fill-opacity', 1)
     .style('stroke', '#fff')
     .style('stroke-width', '0.5px')
-  
+
   return svg
 }
 );
@@ -63,7 +63,7 @@ require('d3-geo-projection')
   main.variable(observer("d3")).define("d3", ["require"], function(require){return(
 require('d3')
 )});
-  main.variable(observer("labels")).define("labels", function(){return(
+  main.variable(observer()).define("labels", function(){return(
 [
   "United States",
   "India",
