@@ -12,15 +12,26 @@
     (new Runtime).module(define, name => {
       if (name === "viewof order") return Inspector.into(".viewof-order")();
       if (name === "viewof orderHouse") return Inspector.into(".viewof-orderHouse")();
-      if (name === "chart") return Inspector.into(".chart")();
+      if (name === "chart") return Inspector.into(".chart-bipartite")();
+    });
+    import define from "https://api.observablehq.com/@n3/force-directed-graph-with-zoom-and-stroke-scaling-svg-for-ig.js?v=3";
+    (new Runtime).module(define, name => {
+      if (name === "viewof link_strength") return Inspector.into(".viewof-link_strength")();
+      if (name === "viewof task") return Inspector.into(".viewof-task")();
+      if (name === "chart") return Inspector.into(".chart-forcegraph")();
     });
     </script>
   </head>
   <body>
     <div class="viewof-order"></div>
     <div class="viewof-orderHouse"></div>
-    <div class="chart"></div>
+    <div class="chart-bipartite"></div>
     <p>Bipartite Network of Teams</p>
+
+    <div class="viewof-link_strength"></div>
+    <div class="viewof-task"></div>
+    <div class="chart-forcegraph"></div>
+    <p>Network of Activity</p>
 
   </body>
 </html>
