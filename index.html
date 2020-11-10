@@ -20,6 +20,11 @@
       if (name === "viewof task") return Inspector.into(".viewof-task")();
       if (name === "chart") return Inspector.into(".chart-forcegraph")();
     });
+    import define_bubbles from "https://api.observablehq.com/@n3/zoomable-circle-packing.js?v=3";
+    (new Runtime).module(define, name => {
+      if (name === "chart") return Inspector.into(".chart-bubble")();
+    });
+</script>
     </script>
   </head>
   <body>
@@ -33,5 +38,7 @@
     <div class="chart-forcegraph"></div>
     <p>Network of Activity</p>
 
+    <div class="chart-bubble"></div>
+    <p>Bubble of Activity</p>
   </body>
 </html>
