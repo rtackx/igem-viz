@@ -1,0 +1,14 @@
+{
+  "name": "@selimbs/sortable-bar-chart",
+  "main": "37073bfcbe7d1d22@328.js",
+  "version": "328.0.0",
+  "homepage": "https://observablehq.com/@selimbs/sortable-bar-chart",
+  "author": {
+    "name": "selimbs",
+    "url": "https://observablehq.com/@selimbs"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

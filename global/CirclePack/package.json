@@ -1,0 +1,17 @@
+{
+  "name": "@selimbs/zoomable-circle-packing",
+  "main": "3b11d0e743811f38@177.js",
+  "version": "177.0.0",
+  "homepage": "https://observablehq.com/@selimbs/zoomable-circle-packing",
+  "author": {
+    "name": "selimbs",
+    "url": "https://observablehq.com/@selimbs"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  },
+  "dependencies": {
+    "@observablehq/runtime": "^4.8.0"
+  }
+}
