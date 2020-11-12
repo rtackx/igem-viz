@@ -1,0 +1,14 @@
+{
+  "name": "@jrathin/force-directed-graph-with-zoom-and-stroke-scaling-svg-idlab",
+  "main": "d9e421bcb1da5a87@439.js",
+  "version": "439.0.0",
+  "homepage": "https://observablehq.com/@jrathin/force-directed-graph-with-zoom-and-stroke-scaling-svg-idlab",
+  "author": {
+    "name": "Rathin Jeyaram",
+    "url": "https://observablehq.com/@jrathin"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

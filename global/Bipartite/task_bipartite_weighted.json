@@ -1,0 +1,1075 @@
+{
+ "directed": false,
+ "multigraph": false,
+ "graph": {},
+ "nodes": [
+  {
+   "group": 1,
+   "id": "Collecting data / running assays",
+   "degree": 3,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Interpreting results",
+   "degree": 1,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Lab maintenance",
+   "degree": 2,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Safety management",
+   "degree": 1,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Brainstorming",
+   "degree": 23,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Project administration",
+   "degree": 6,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Reading papers or other material",
+   "degree": 8,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Software development",
+   "degree": 4,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Preparing samples",
+   "degree": 2,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Developing protocols",
+   "degree": 3,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Hardware development",
+   "degree": 2,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Education event",
+   "degree": 7,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Education / outreach event",
+   "degree": 9,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Planning tasks",
+   "degree": 19,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Writing / preparing presentations",
+   "degree": 11,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Meetups",
+   "degree": 13,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Team meetings",
+   "degree": 26,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "No iGEM work",
+   "degree": 4,
+   "type": "circle"
+  },
+  {
+   "group": 1,
+   "id": "Analysing results",
+   "degree": 2,
+   "type": "circle"
+  },
+  {
+   "group": 2,
+   "id": "1287",
+   "degree": 6,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2359",
+   "degree": 4,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2361",
+   "degree": 5,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "573",
+   "degree": 3,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "1343",
+   "degree": 4,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "575",
+   "degree": 2,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2368",
+   "degree": 3,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "579",
+   "degree": 1,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2380",
+   "degree": 4,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2382",
+   "degree": 1,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "465",
+   "degree": 11,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "466",
+   "degree": 2,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2387",
+   "degree": 1,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2388",
+   "degree": 8,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2389",
+   "degree": 4,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2391",
+   "degree": 5,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2392",
+   "degree": 2,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2393",
+   "degree": 3,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2394",
+   "degree": 13,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2395",
+   "degree": 3,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2396",
+   "degree": 5,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "1117",
+   "degree": 1,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2398",
+   "degree": 1,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2399",
+   "degree": 3,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2400",
+   "degree": 3,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2401",
+   "degree": 1,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "1122",
+   "degree": 1,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2397",
+   "degree": 9,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2404",
+   "degree": 1,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2405",
+   "degree": 7,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2406",
+   "degree": 5,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2407",
+   "degree": 5,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2408",
+   "degree": 5,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "1129",
+   "degree": 1,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2409",
+   "degree": 4,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "2410",
+   "degree": 6,
+   "type": "square"
+  },
+  {
+   "group": 2,
+   "id": "1134",
+   "degree": 3,
+   "type": "square"
+  }
+ ],
+ "links": [
+  {
+   "source": "Brainstorming",
+   "target": "2389",
+   "value": 3
+  },
+  {
+   "source": "Project administration",
+   "target": "2389",
+   "value": 1
+  },
+  {
+   "source": "Team meetings",
+   "target": "2389",
+   "value": 3
+  },
+  {
+   "source": "Writing / preparing presentations",
+   "target": "2389",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2380",
+   "value": 1
+  },
+  {
+   "source": "Software development",
+   "target": "2380",
+   "value": 1
+  },
+  {
+   "source": "Collecting data / running assays",
+   "target": "2380",
+   "value": 1
+  },
+  {
+   "source": "Education event",
+   "target": "2380",
+   "value": 1
+  },
+  {
+   "source": "Writing / preparing presentations",
+   "target": "2387",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "465",
+   "value": 3
+  },
+  {
+   "source": "Preparing samples",
+   "target": "465",
+   "value": 2
+  },
+  {
+   "source": "Team meetings",
+   "target": "465",
+   "value": 3
+  },
+  {
+   "source": "Lab maintenance",
+   "target": "465",
+   "value": 2
+  },
+  {
+   "source": "Developing protocols",
+   "target": "465",
+   "value": 2
+  },
+  {
+   "source": "Planning tasks",
+   "target": "465",
+   "value": 3
+  },
+  {
+   "source": "Analysing results",
+   "target": "465",
+   "value": 2
+  },
+  {
+   "source": "Interpreting results",
+   "target": "465",
+   "value": 2
+  },
+  {
+   "source": "Reading papers or other material",
+   "target": "465",
+   "value": 1
+  },
+  {
+   "source": "Collecting data / running assays",
+   "target": "465",
+   "value": 1
+  },
+  {
+   "source": "Meetups",
+   "target": "465",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2400",
+   "value": 1
+  },
+  {
+   "source": "Writing / preparing presentations",
+   "target": "2400",
+   "value": 1
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2400",
+   "value": 1
+  },
+  {
+   "source": "Team meetings",
+   "target": "2392",
+   "value": 1
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2392",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "466",
+   "value": 1
+  },
+  {
+   "source": "Planning tasks",
+   "target": "466",
+   "value": 1
+  },
+  {
+   "source": "Planning tasks",
+   "target": "573",
+   "value": 4
+  },
+  {
+   "source": "Team meetings",
+   "target": "573",
+   "value": 2
+  },
+  {
+   "source": "Meetups",
+   "target": "573",
+   "value": 1
+  },
+  {
+   "source": "Team meetings",
+   "target": "579",
+   "value": 1
+  },
+  {
+   "source": "Team meetings",
+   "target": "2388",
+   "value": 1
+  },
+  {
+   "source": "Writing / preparing presentations",
+   "target": "2388",
+   "value": 1
+  },
+  {
+   "source": "Safety management",
+   "target": "2388",
+   "value": 1
+  },
+  {
+   "source": "Project administration",
+   "target": "2388",
+   "value": 1
+  },
+  {
+   "source": "Meetups",
+   "target": "2388",
+   "value": 1
+  },
+  {
+   "source": "Reading papers or other material",
+   "target": "2388",
+   "value": 1
+  },
+  {
+   "source": "No iGEM work",
+   "target": "2388",
+   "value": 1
+  },
+  {
+   "source": "Software development",
+   "target": "2388",
+   "value": 1
+  },
+  {
+   "source": "Team meetings",
+   "target": "575",
+   "value": 2
+  },
+  {
+   "source": "Project administration",
+   "target": "575",
+   "value": 2
+  },
+  {
+   "source": "Team meetings",
+   "target": "2359",
+   "value": 11
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2359",
+   "value": 2
+  },
+  {
+   "source": "Project administration",
+   "target": "2359",
+   "value": 1
+  },
+  {
+   "source": "Meetups",
+   "target": "2359",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2361",
+   "value": 4
+  },
+  {
+   "source": "Team meetings",
+   "target": "2361",
+   "value": 14
+  },
+  {
+   "source": "Writing / preparing presentations",
+   "target": "2361",
+   "value": 4
+  },
+  {
+   "source": "Meetups",
+   "target": "2361",
+   "value": 4
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2361",
+   "value": 6
+  },
+  {
+   "source": "Team meetings",
+   "target": "1129",
+   "value": 3
+  },
+  {
+   "source": "Brainstorming",
+   "target": "1134",
+   "value": 1
+  },
+  {
+   "source": "Reading papers or other material",
+   "target": "1134",
+   "value": 1
+  },
+  {
+   "source": "Planning tasks",
+   "target": "1134",
+   "value": 1
+  },
+  {
+   "source": "Team meetings",
+   "target": "1117",
+   "value": 2
+  },
+  {
+   "source": "Brainstorming",
+   "target": "1122",
+   "value": 1
+  },
+  {
+   "source": "Planning tasks",
+   "target": "1287",
+   "value": 5
+  },
+  {
+   "source": "Team meetings",
+   "target": "1287",
+   "value": 3
+  },
+  {
+   "source": "Education / outreach event",
+   "target": "1287",
+   "value": 8
+  },
+  {
+   "source": "No iGEM work",
+   "target": "1287",
+   "value": 7
+  },
+  {
+   "source": "Writing / preparing presentations",
+   "target": "1287",
+   "value": 1
+  },
+  {
+   "source": "Meetups",
+   "target": "1287",
+   "value": 2
+  },
+  {
+   "source": "Brainstorming",
+   "target": "1343",
+   "value": 1
+  },
+  {
+   "source": "Software development",
+   "target": "1343",
+   "value": 1
+  },
+  {
+   "source": "Writing / preparing presentations",
+   "target": "1343",
+   "value": 1
+  },
+  {
+   "source": "Team meetings",
+   "target": "1343",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2368",
+   "value": 1
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2368",
+   "value": 2
+  },
+  {
+   "source": "Reading papers or other material",
+   "target": "2368",
+   "value": 1
+  },
+  {
+   "source": "Team meetings",
+   "target": "2404",
+   "value": 2
+  },
+  {
+   "source": "Team meetings",
+   "target": "2401",
+   "value": 4
+  },
+  {
+   "source": "Education event",
+   "target": "2399",
+   "value": 7
+  },
+  {
+   "source": "Education / outreach event",
+   "target": "2399",
+   "value": 7
+  },
+  {
+   "source": "Meetups",
+   "target": "2399",
+   "value": 4
+  },
+  {
+   "source": "Team meetings",
+   "target": "2398",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2397",
+   "value": 2
+  },
+  {
+   "source": "Team meetings",
+   "target": "2397",
+   "value": 20
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2397",
+   "value": 5
+  },
+  {
+   "source": "Meetups",
+   "target": "2397",
+   "value": 20
+  },
+  {
+   "source": "Writing / preparing presentations",
+   "target": "2397",
+   "value": 4
+  },
+  {
+   "source": "No iGEM work",
+   "target": "2397",
+   "value": 2
+  },
+  {
+   "source": "Project administration",
+   "target": "2397",
+   "value": 3
+  },
+  {
+   "source": "Education / outreach event",
+   "target": "2397",
+   "value": 7
+  },
+  {
+   "source": "Education event",
+   "target": "2397",
+   "value": 7
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2405",
+   "value": 3
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2405",
+   "value": 3
+  },
+  {
+   "source": "Project administration",
+   "target": "2405",
+   "value": 2
+  },
+  {
+   "source": "Education / outreach event",
+   "target": "2405",
+   "value": 5
+  },
+  {
+   "source": "No iGEM work",
+   "target": "2405",
+   "value": 1
+  },
+  {
+   "source": "Team meetings",
+   "target": "2405",
+   "value": 6
+  },
+  {
+   "source": "Education event",
+   "target": "2405",
+   "value": 7
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2408",
+   "value": 2
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2408",
+   "value": 2
+  },
+  {
+   "source": "Team meetings",
+   "target": "2408",
+   "value": 2
+  },
+  {
+   "source": "Education / outreach event",
+   "target": "2408",
+   "value": 2
+  },
+  {
+   "source": "Writing / preparing presentations",
+   "target": "2408",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2409",
+   "value": 2
+  },
+  {
+   "source": "Meetups",
+   "target": "2409",
+   "value": 7
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2409",
+   "value": 7
+  },
+  {
+   "source": "Team meetings",
+   "target": "2409",
+   "value": 6
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2410",
+   "value": 3
+  },
+  {
+   "source": "Education / outreach event",
+   "target": "2410",
+   "value": 5
+  },
+  {
+   "source": "Education event",
+   "target": "2410",
+   "value": 2
+  },
+  {
+   "source": "Developing protocols",
+   "target": "2410",
+   "value": 1
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2410",
+   "value": 2
+  },
+  {
+   "source": "Team meetings",
+   "target": "2410",
+   "value": 9
+  },
+  {
+   "source": "Meetups",
+   "target": "2382",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2391",
+   "value": 1
+  },
+  {
+   "source": "Team meetings",
+   "target": "2391",
+   "value": 5
+  },
+  {
+   "source": "Reading papers or other material",
+   "target": "2391",
+   "value": 3
+  },
+  {
+   "source": "Writing / preparing presentations",
+   "target": "2391",
+   "value": 3
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2391",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2393",
+   "value": 1
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2393",
+   "value": 1
+  },
+  {
+   "source": "Meetups",
+   "target": "2393",
+   "value": 1
+  },
+  {
+   "source": "Team meetings",
+   "target": "2394",
+   "value": 6
+  },
+  {
+   "source": "Meetups",
+   "target": "2394",
+   "value": 8
+  },
+  {
+   "source": "Education event",
+   "target": "2394",
+   "value": 6
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2394",
+   "value": 8
+  },
+  {
+   "source": "Reading papers or other material",
+   "target": "2394",
+   "value": 1
+  },
+  {
+   "source": "Lab maintenance",
+   "target": "2394",
+   "value": 1
+  },
+  {
+   "source": "Collecting data / running assays",
+   "target": "2394",
+   "value": 1
+  },
+  {
+   "source": "Analysing results",
+   "target": "2394",
+   "value": 1
+  },
+  {
+   "source": "Preparing samples",
+   "target": "2394",
+   "value": 1
+  },
+  {
+   "source": "Software development",
+   "target": "2394",
+   "value": 1
+  },
+  {
+   "source": "Education / outreach event",
+   "target": "2394",
+   "value": 6
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2394",
+   "value": 4
+  },
+  {
+   "source": "Hardware development",
+   "target": "2394",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2395",
+   "value": 1
+  },
+  {
+   "source": "Reading papers or other material",
+   "target": "2395",
+   "value": 1
+  },
+  {
+   "source": "Writing / preparing presentations",
+   "target": "2395",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2396",
+   "value": 1
+  },
+  {
+   "source": "Education / outreach event",
+   "target": "2396",
+   "value": 1
+  },
+  {
+   "source": "Developing protocols",
+   "target": "2396",
+   "value": 1
+  },
+  {
+   "source": "Education event",
+   "target": "2396",
+   "value": 1
+  },
+  {
+   "source": "Team meetings",
+   "target": "2396",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2407",
+   "value": 2
+  },
+  {
+   "source": "Education / outreach event",
+   "target": "2407",
+   "value": 2
+  },
+  {
+   "source": "Team meetings",
+   "target": "2407",
+   "value": 2
+  },
+  {
+   "source": "Hardware development",
+   "target": "2407",
+   "value": 2
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2407",
+   "value": 2
+  },
+  {
+   "source": "Planning tasks",
+   "target": "2406",
+   "value": 2
+  },
+  {
+   "source": "Reading papers or other material",
+   "target": "2406",
+   "value": 1
+  },
+  {
+   "source": "Brainstorming",
+   "target": "2406",
+   "value": 2
+  },
+  {
+   "source": "Team meetings",
+   "target": "2406",
+   "value": 3
+  },
+  {
+   "source": "Meetups",
+   "target": "2406",
+   "value": 1
+  }
+ ]
+}

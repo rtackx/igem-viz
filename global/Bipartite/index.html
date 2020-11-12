@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bipartite Diagram</title>
+</head>
+<body>
+
+	<h1>Weighted Bipartite Network : TASKS - USERS</h1>
+	<canvas id="network" width="1200" height="600"></canvas>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="//d3js.org/d3-shape.v0.6.min.js"></script>
+	<script>
+
+	var text_center = true;
+	var nominal_base_node_size = 8;
+	var nominal_text_size = 10;
+	var max_text_size = 24;
+
+	var size = d3.scalePow().exponent(1)
+  		.domain([1,100])
+  		.range([8,24]);
+
+	var canvas = d3.select("#network"),
+			width = canvas.attr("width"),
+			height = canvas.attr("height"),
+			x = d3.scaleOrdinal().range([20,width-20])
+			ctx = canvas.node().getContext("2d"),
+			simulation = d3.forceSimulation()
+				.force("x",d3.forceX(width/2))
+				// .force("x",d3.forceX(function (d) {
+					// return x(d.group);
+				// }).strength(0.2))                  // This her increases the separation between two types of nodes
+				.force("y",d3.forceY(0.3*height))
+				.force("collide", d3.forceCollide(35))
+				.force("charge",d3.forceManyBody()
+						.strength(-700))
+				.force("link",d3.forceLink()
+					 .id(function (d) {return d.id;}).strength(0.7)) ;
+
+	d3.json('/Bipartite/task_bipartite_weighted.json', function (err,graph) {
+
+		if (err) throw err;
+
+		var labels = d3.set(graph.nodes.map(function(d) {
+            return d.group;
+        }));
+
+		var colourScale = d3.scaleOrdinal()
+            .domain(labels)
+            .range(['#66c2a5','#fc8d62']);
+
+        var shapeScale = d3.scaleOrdinal()
+            .domain(labels)
+            .range([d3_shape.symbolCircle, d3_shape.symbolSquare]);
+
+
+
+        function drawNode(d) {
+
+            var symbol = d3_shape.symbol()
+                .type(shapeScale(d.type))
+                .size(5*d.degree*d.degree)
+                .context(ctx);
+
+            ctx.translate(d.x, d.y);
+            ctx.fillStyle = colourScale(d.type);
+            ctx.beginPath();
+            symbol();
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+            ctx.translate(-d.x, -d.y);
+            ctx.font = "10px Comic Sans MS";
+			ctx.fillStyle = "Black";
+			ctx.textAlign = "center";
+            ctx.fillText(d.id,d.x,d.y);
+		}
+
+        simulation
+			.nodes(graph.nodes)
+			.on("tick", update)
+			.force("link")
+			.links(graph.links);
+
+
+		canvas
+      		.call(d3.drag()
+          	.container(canvas.node())
+          	.subject(dragsubject)
+          	.on("start", dragstarted)
+          	.on("drag", dragged)
+          	.on("end", dragended));
+
+		function update() {
+			ctx.clearRect(0,0,width,height);
+			ctx.fillStyle = '#fc8d62';
+	        ctx.beginPath();
+	        ctx.rect(100, 75, 10, 10);
+	        ctx.closePath();
+	        ctx.fill();
+	        ctx.stroke();
+	        ctx.font = "12px Comic Sans MS";
+			ctx.fillStyle = "Black";
+			ctx.textAlign = "center";
+	        ctx.fillText('USERS',150,85);
+
+
+	        ctx.fillStyle = '#66c2a5';
+	        ctx.beginPath();
+	        ctx.arc(105, 60, 6, 0, 2*Math.PI);
+	        ctx.closePath();
+	        ctx.fill();
+	        ctx.stroke();
+	        ctx.font = "12px Comic Sans MS";
+			ctx.fillStyle = "Black";
+			ctx.textAlign = "center";
+	        ctx.fillText('TASKS',150,65);
+
+			ctx.fillStyle = '#aaa'
+			graph.links.forEach(drawLink);
+
+			ctx.lineWidth=1;
+			ctx.globalAlpha = 1;
+			graph.nodes.forEach(drawNode);
+
+		}
+
+		function dragsubject() {
+			return simulation.find(d3.event.x, d3.event.y);
+		}
+
+
+	});
+
+		function dragstarted() {
+		  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+		  d3.event.subject.fx = d3.event.subject.x;
+		  d3.event.subject.fy = d3.event.subject.y;
+		  console.log(d3.event.subject);
+		}
+
+		function dragged() {
+		  d3.event.subject.fx = d3.event.x;
+		  d3.event.subject.fy = d3.event.y;
+		}
+
+		function dragended() {
+		  if (!d3.event.active) simulation.alphaTarget(0);
+		  d3.event.subject.fx = null;
+		  d3.event.subject.fy = null;
+}
+
+
+		function drawLink(l) {
+
+			ctx.beginPath();
+			ctx.moveTo(l.source.x,l.source.y);
+			ctx.lineTo(l.target.x,l.target.y);
+			ctx.lineWidth = l.value
+			ctx.globalAlpha = 0.7;
+			ctx.strokeStyle = '#aaa';
+			ctx.stroke();
+		}
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

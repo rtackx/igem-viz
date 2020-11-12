@@ -1,0 +1,4337 @@
+{
+  "nodes": [
+    {
+      "id": "465",
+      "is_registered": "true",
+      "team_name": "Estonia_TUIT",
+      "country": "Estonia",
+      "longest_streak": 2,
+      "current_streak": 2,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 8
+    },
+    {
+      "id": "2386",
+      "is_registered": "true",
+      "team_name": "Estonia_TUIT",
+      "country": "Estonia",
+      "longest_streak": 0,
+      "current_streak": 0,
+      "nb_phones": 1,
+      "os": "android",
+      "degree": 5
+    },
+    {
+      "id": "2400",
+      "is_registered": "true",
+      "team_name": "Estonia_TUIT",
+      "country": "Estonia",
+      "longest_streak": 1,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 5
+    },
+    {
+      "id": "2390",
+      "is_registered": "true",
+      "team_name": "Estonia_TUIT",
+      "country": "Estonia",
+      "longest_streak": 0,
+      "current_streak": 0,
+      "nb_phones": 1,
+      "os": "android",
+      "degree": 1
+    },
+    {
+      "id": "2392",
+      "is_registered": "true",
+      "team_name": "Estonia_TUIT",
+      "country": "Estonia",
+      "longest_streak": 1,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 6
+    },
+    {
+      "id": "466",
+      "is_registered": "true",
+      "team_name": "Estonia_TUIT",
+      "country": "Estonia",
+      "longest_streak": 2,
+      "current_streak": 2,
+      "nb_phones": 1,
+      "os": "android",
+      "degree": 1
+    },
+    {
+      "id": "583",
+      "is_registered": "true",
+      "team_name": "GO_Paris-Saclay",
+      "country": "France",
+      "longest_streak": 0,
+      "current_streak": 0,
+      "nb_phones": 1,
+      "os": "android",
+      "degree": 2
+    },
+    {
+      "id": "573",
+      "is_registered": "true",
+      "team_name": "GO_Paris-Saclay",
+      "country": "France",
+      "longest_streak": 4,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 9
+    },
+    {
+      "id": "579",
+      "is_registered": "true",
+      "team_name": "GO_Paris-Saclay",
+      "country": "France",
+      "longest_streak": 1,
+      "current_streak": 0,
+      "nb_phones": 1,
+      "os": "android",
+      "degree": 2
+    },
+    {
+      "id": "575",
+      "is_registered": "true",
+      "team_name": "GO_Paris-Saclay",
+      "country": "France",
+      "longest_streak": 3,
+      "current_streak": 3,
+      "nb_phones": 1,
+      "os": "android",
+      "degree": 7
+    },
+    {
+      "id": "1126",
+      "is_registered": "true",
+      "team_name": "Nantes",
+      "country": "France",
+      "longest_streak": 0,
+      "current_streak": 0,
+      "nb_phones": 1,
+      "os": "android",
+      "degree": 2
+    },
+    {
+      "id": "2359",
+      "is_registered": "true",
+      "team_name": "Nantes",
+      "country": "France",
+      "longest_streak": 2,
+      "current_streak": 0,
+      "nb_phones": 1,
+      "os": "android",
+      "degree": 48
+    },
+    {
+      "id": "2360",
+      "is_registered": "true",
+      "team_name": "Nantes",
+      "country": "France",
+      "longest_streak": 0,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 1
+    },
+    {
+      "id": "2361",
+      "is_registered": "true",
+      "team_name": "Nantes",
+      "country": "France",
+      "longest_streak": 7,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 52
+    },
+    {
+      "id": "1129",
+      "is_registered": "true",
+      "team_name": "Nantes",
+      "country": "France",
+      "longest_streak": 1,
+      "current_streak": 1,
+      "nb_phones": 1,
+      "os": "android",
+      "degree": 6
+    },
+    {
+      "id": "1134",
+      "is_registered": "true",
+      "team_name": "Nantes",
+      "country": "France",
+      "longest_streak": 1,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 25
+    },
+    {
+      "id": "1131",
+      "is_registered": "true",
+      "team_name": "Nantes",
+      "country": "France",
+      "longest_streak": 0,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 7
+    },
+    {
+      "id": "1117",
+      "is_registered": "true",
+      "team_name": "Nantes",
+      "country": "France",
+      "longest_streak": 1,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 5
+    },
+    {
+      "id": "1122",
+      "is_registered": "true",
+      "team_name": "Nantes",
+      "country": "France",
+      "longest_streak": 1,
+      "current_streak": 1,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 3
+    },
+    {
+      "id": "1125",
+      "is_registered": "true",
+      "team_name": "Nantes",
+      "country": "France",
+      "longest_streak": 0,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 2
+    },
+    {
+      "id": "1123",
+      "is_registered": "true",
+      "team_name": "Nantes",
+      "country": "France",
+      "longest_streak": 0,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 1
+    },
+    {
+      "id": "1287",
+      "is_registered": "true",
+      "team_name": "NTHU_Taiwan",
+      "country": "Taiwan",
+      "longest_streak": 9,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 6
+    },
+    {
+      "id": "1275",
+      "is_registered": "true",
+      "team_name": "NTHU_Taiwan",
+      "country": "Taiwan",
+      "longest_streak": 0,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 5
+    },
+    {
+      "id": "1279",
+      "is_registered": "true",
+      "team_name": "NTHU_Taiwan",
+      "country": "Taiwan",
+      "longest_streak": 0,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 1
+    },
+    {
+      "id": "2404",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 2,
+      "current_streak": 0,
+      "nb_phones": 1,
+      "os": "ios",
+      "degree": 98
+    },
+    {
+      "id": "2403",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 0,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 85
+    },
+    {
+      "id": "2402",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 0,
+      "current_streak": 0,
+      "nb_phones": 1,
+      "os": "android",
+      "degree": 103
+    },
+    {
+      "id": "2401",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 1,
+      "current_streak": 0,
+      "nb_phones": 1,
+      "os": "ios",
+      "degree": 97
+    },
+    {
+      "id": "2399",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 6,
+      "current_streak": 0,
+      "nb_phones": 1,
+      "os": "android",
+      "degree": 264
+    },
+    {
+      "id": "2398",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 1,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 93
+    },
+    {
+      "id": "2397",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 7,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 445
+    },
+    {
+      "id": "2405",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 7,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 204
+    },
+    {
+      "id": "2408",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 1,
+      "current_streak": 0,
+      "nb_phones": 1,
+      "os": "android",
+      "degree": 91
+    },
+    {
+      "id": "2409",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 2,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 168
+    },
+    {
+      "id": "2410",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 2,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 83
+    },
+    {
+      "id": "2382",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 1,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 111
+    },
+    {
+      "id": "2391",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 1,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 188
+    },
+    {
+      "id": "2393",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 2,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 126
+    },
+    {
+      "id": "2394",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 6,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 377
+    },
+    {
+      "id": "2395",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 1,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 119
+    },
+    {
+      "id": "2396",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 1,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 106
+    },
+    {
+      "id": "2407",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 1,
+      "current_streak": 1,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 154
+    },
+    {
+      "id": "2406",
+      "is_registered": "true",
+      "team_name": "RUM-UPRM",
+      "country": "United States",
+      "longest_streak": 2,
+      "current_streak": 0,
+      "nb_phones": 0,
+      "os": "unknown",
+      "degree": 116
+    }
+  ],
+  "links": [
+    {
+      "source": "1117",
+      "target": "1122",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "1129",
+      "target": "1122",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "1129",
+      "target": "1125",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "1129",
+      "target": "1126",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "1287",
+      "target": "1275",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "1287",
+      "target": "1275",
+      "task": "Meetups",
+      "count": 1
+    },
+    {
+      "source": "1287",
+      "target": "1275",
+      "task": "Team meetings",
+      "count": 3
+    },
+    {
+      "source": "1287",
+      "target": "1279",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2359",
+      "target": "1117",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2359",
+      "target": "1122",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2359",
+      "target": "1123",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2359",
+      "target": "1125",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2359",
+      "target": "1126",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2359",
+      "target": "1129",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2359",
+      "target": "1131",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2359",
+      "target": "1134",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2359",
+      "target": "1134",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2359",
+      "target": "1134",
+      "task": "Team meetings",
+      "count": 8
+    },
+    {
+      "source": "2359",
+      "target": "2360",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2359",
+      "target": "2361",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2359",
+      "target": "2361",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2359",
+      "target": "2361",
+      "task": "Team meetings",
+      "count": 9
+    },
+    {
+      "source": "2361",
+      "target": "1117",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2361",
+      "target": "1129",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2361",
+      "target": "1131",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2361",
+      "target": "1131",
+      "task": "Team meetings",
+      "count": 3
+    },
+    {
+      "source": "2361",
+      "target": "1134",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2361",
+      "target": "1134",
+      "task": "Meetups",
+      "count": 1
+    },
+    {
+      "source": "2361",
+      "target": "1134",
+      "task": "Planning tasks",
+      "count": 5
+    },
+    {
+      "source": "2361",
+      "target": "1134",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2361",
+      "target": "1134",
+      "task": "Writing / preparing presentations",
+      "count": 2
+    },
+    {
+      "source": "2361",
+      "target": "2359",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2361",
+      "target": "2359",
+      "task": "Meetups",
+      "count": 2
+    },
+    {
+      "source": "2361",
+      "target": "2359",
+      "task": "Planning tasks",
+      "count": 5
+    },
+    {
+      "source": "2361",
+      "target": "2359",
+      "task": "Team meetings",
+      "count": 7
+    },
+    {
+      "source": "2361",
+      "target": "2359",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2393",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2393",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2393",
+      "task": "Reading papers or other material",
+      "count": 3
+    },
+    {
+      "source": "2391",
+      "target": "2393",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2391",
+      "target": "2393",
+      "task": "Writing / preparing presentations",
+      "count": 2
+    },
+    {
+      "source": "2391",
+      "target": "2394",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2394",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2394",
+      "task": "Reading papers or other material",
+      "count": 3
+    },
+    {
+      "source": "2391",
+      "target": "2394",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2391",
+      "target": "2394",
+      "task": "Writing / preparing presentations",
+      "count": 3
+    },
+    {
+      "source": "2391",
+      "target": "2395",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2395",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2395",
+      "task": "Reading papers or other material",
+      "count": 3
+    },
+    {
+      "source": "2391",
+      "target": "2395",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2391",
+      "target": "2395",
+      "task": "Writing / preparing presentations",
+      "count": 3
+    },
+    {
+      "source": "2391",
+      "target": "2399",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2399",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2399",
+      "task": "Reading papers or other material",
+      "count": 3
+    },
+    {
+      "source": "2391",
+      "target": "2399",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2391",
+      "target": "2399",
+      "task": "Writing / preparing presentations",
+      "count": 3
+    },
+    {
+      "source": "2391",
+      "target": "2401",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2401",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2401",
+      "task": "Reading papers or other material",
+      "count": 3
+    },
+    {
+      "source": "2391",
+      "target": "2401",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2391",
+      "target": "2401",
+      "task": "Writing / preparing presentations",
+      "count": 2
+    },
+    {
+      "source": "2391",
+      "target": "2402",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2402",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2402",
+      "task": "Reading papers or other material",
+      "count": 3
+    },
+    {
+      "source": "2391",
+      "target": "2402",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2391",
+      "target": "2402",
+      "task": "Writing / preparing presentations",
+      "count": 2
+    },
+    {
+      "source": "2391",
+      "target": "2403",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2403",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2403",
+      "task": "Reading papers or other material",
+      "count": 3
+    },
+    {
+      "source": "2391",
+      "target": "2403",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2391",
+      "target": "2403",
+      "task": "Writing / preparing presentations",
+      "count": 2
+    },
+    {
+      "source": "2391",
+      "target": "2406",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2406",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2391",
+      "target": "2406",
+      "task": "Reading papers or other material",
+      "count": 3
+    },
+    {
+      "source": "2391",
+      "target": "2406",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2391",
+      "target": "2406",
+      "task": "Writing / preparing presentations",
+      "count": 2
+    },
+    {
+      "source": "2392",
+      "target": "2386",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2392",
+      "target": "2390",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2392",
+      "target": "465",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2392",
+      "target": "465",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2392",
+      "target": "466",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2393",
+      "target": "2382",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2393",
+      "target": "2382",
+      "task": "Meetups",
+      "count": 1
+    },
+    {
+      "source": "2393",
+      "target": "2397",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2393",
+      "target": "2397",
+      "task": "Meetups",
+      "count": 1
+    },
+    {
+      "source": "2393",
+      "target": "2403",
+      "task": "Meetups",
+      "count": 1
+    },
+    {
+      "source": "2393",
+      "target": "2404",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2393",
+      "target": "2406",
+      "task": "Meetups",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2382",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2382",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2382",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2382",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2391",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2391",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2391",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2391",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2391",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2391",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2393",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2393",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2393",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2393",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2395",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2395",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2395",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2395",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2395",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2395",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2396",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2396",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2396",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2396",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2397",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2397",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2397",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2397",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2398",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2398",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2398",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2398",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2399",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2399",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2399",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2399",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2399",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2399",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2401",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2401",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2401",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2401",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2401",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2401",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2402",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2402",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2402",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2402",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2402",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2402",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2403",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2403",
+      "task": "Education event",
+      "count": 3
+    },
+    {
+      "source": "2394",
+      "target": "2403",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2403",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2404",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2404",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2404",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2404",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2405",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2405",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2405",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2405",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2406",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2406",
+      "task": "Education / outreach event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2406",
+      "task": "Education event",
+      "count": 4
+    },
+    {
+      "source": "2394",
+      "target": "2406",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2406",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2406",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2394",
+      "target": "2407",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2394",
+      "target": "2407",
+      "task": "Planning tasks",
+      "count": 6
+    },
+    {
+      "source": "2395",
+      "target": "2382",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2391",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2391",
+      "task": "Reading papers or other material",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2391",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2394",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2394",
+      "task": "Reading papers or other material",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2394",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2396",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2397",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2398",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2398",
+      "task": "Reading papers or other material",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2398",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2399",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2399",
+      "task": "Reading papers or other material",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2399",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2401",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2402",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2402",
+      "task": "Reading papers or other material",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2402",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2403",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2403",
+      "task": "Reading papers or other material",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2403",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2395",
+      "target": "2404",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2396",
+      "target": "2382",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2396",
+      "target": "2382",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2396",
+      "target": "2382",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2396",
+      "target": "2393",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2396",
+      "target": "2393",
+      "task": "Developing protocols",
+      "count": 1
+    },
+    {
+      "source": "2396",
+      "target": "2393",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2396",
+      "target": "2393",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2382",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2382",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2382",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2382",
+      "task": "Meetups",
+      "count": 9
+    },
+    {
+      "source": "2397",
+      "target": "2382",
+      "task": "Planning tasks",
+      "count": 3
+    },
+    {
+      "source": "2397",
+      "target": "2382",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2382",
+      "task": "Team meetings",
+      "count": 10
+    },
+    {
+      "source": "2397",
+      "target": "2382",
+      "task": "Writing / preparing presentations",
+      "count": 3
+    },
+    {
+      "source": "2397",
+      "target": "2391",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2391",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2391",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2391",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2391",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2391",
+      "task": "Team meetings",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2393",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2393",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2393",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2393",
+      "task": "Meetups",
+      "count": 9
+    },
+    {
+      "source": "2397",
+      "target": "2393",
+      "task": "Planning tasks",
+      "count": 3
+    },
+    {
+      "source": "2397",
+      "target": "2393",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2393",
+      "task": "Team meetings",
+      "count": 10
+    },
+    {
+      "source": "2397",
+      "target": "2393",
+      "task": "Writing / preparing presentations",
+      "count": 3
+    },
+    {
+      "source": "2397",
+      "target": "2394",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2394",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2394",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2394",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2394",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2394",
+      "task": "Team meetings",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2395",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2395",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2395",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2395",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2395",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2395",
+      "task": "Team meetings",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2396",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2396",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2396",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2396",
+      "task": "Meetups",
+      "count": 9
+    },
+    {
+      "source": "2397",
+      "target": "2396",
+      "task": "Planning tasks",
+      "count": 4
+    },
+    {
+      "source": "2397",
+      "target": "2396",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2396",
+      "task": "Team meetings",
+      "count": 10
+    },
+    {
+      "source": "2397",
+      "target": "2396",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2398",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2398",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2398",
+      "task": "Meetups",
+      "count": 7
+    },
+    {
+      "source": "2397",
+      "target": "2398",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2398",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2398",
+      "task": "Team meetings",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2399",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2399",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2399",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2399",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2399",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2399",
+      "task": "Team meetings",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2401",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2401",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2401",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2401",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2401",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2401",
+      "task": "Team meetings",
+      "count": 7
+    },
+    {
+      "source": "2397",
+      "target": "2401",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2402",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2402",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2402",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2402",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2402",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2402",
+      "task": "Team meetings",
+      "count": 7
+    },
+    {
+      "source": "2397",
+      "target": "2403",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2403",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2403",
+      "task": "Meetups",
+      "count": 7
+    },
+    {
+      "source": "2397",
+      "target": "2403",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2403",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2403",
+      "task": "Team meetings",
+      "count": 7
+    },
+    {
+      "source": "2397",
+      "target": "2403",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2404",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2404",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2404",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2404",
+      "task": "Meetups",
+      "count": 8
+    },
+    {
+      "source": "2397",
+      "target": "2404",
+      "task": "Planning tasks",
+      "count": 3
+    },
+    {
+      "source": "2397",
+      "target": "2404",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2404",
+      "task": "Team meetings",
+      "count": 9
+    },
+    {
+      "source": "2397",
+      "target": "2404",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2405",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2405",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2405",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2405",
+      "task": "Meetups",
+      "count": 8
+    },
+    {
+      "source": "2397",
+      "target": "2405",
+      "task": "Planning tasks",
+      "count": 3
+    },
+    {
+      "source": "2397",
+      "target": "2405",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2405",
+      "task": "Team meetings",
+      "count": 9
+    },
+    {
+      "source": "2397",
+      "target": "2405",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2406",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2406",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2406",
+      "task": "Meetups",
+      "count": 7
+    },
+    {
+      "source": "2397",
+      "target": "2406",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2406",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2406",
+      "task": "Team meetings",
+      "count": 8
+    },
+    {
+      "source": "2397",
+      "target": "2406",
+      "task": "Writing / preparing presentations",
+      "count": 3
+    },
+    {
+      "source": "2397",
+      "target": "2407",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2407",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2407",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2407",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2407",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2407",
+      "task": "Team meetings",
+      "count": 7
+    },
+    {
+      "source": "2397",
+      "target": "2408",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2408",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2408",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2408",
+      "task": "Meetups",
+      "count": 8
+    },
+    {
+      "source": "2397",
+      "target": "2408",
+      "task": "Planning tasks",
+      "count": 3
+    },
+    {
+      "source": "2397",
+      "target": "2408",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2408",
+      "task": "Team meetings",
+      "count": 9
+    },
+    {
+      "source": "2397",
+      "target": "2408",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2409",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2409",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2409",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2409",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2409",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2409",
+      "task": "Team meetings",
+      "count": 7
+    },
+    {
+      "source": "2397",
+      "target": "2410",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2410",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2410",
+      "task": "Meetups",
+      "count": 6
+    },
+    {
+      "source": "2397",
+      "target": "2410",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2397",
+      "target": "2410",
+      "task": "Project administration",
+      "count": 1
+    },
+    {
+      "source": "2397",
+      "target": "2410",
+      "task": "Team meetings",
+      "count": 6
+    },
+    {
+      "source": "2398",
+      "target": "2393",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2398",
+      "target": "2405",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2398",
+      "target": "2410",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2399",
+      "target": "2382",
+      "task": "Education / outreach event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2382",
+      "task": "Education event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2382",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2399",
+      "target": "2391",
+      "task": "Education / outreach event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2391",
+      "task": "Education event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2391",
+      "task": "Meetups",
+      "count": 4
+    },
+    {
+      "source": "2399",
+      "target": "2393",
+      "task": "Education / outreach event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2393",
+      "task": "Education event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2393",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2399",
+      "target": "2394",
+      "task": "Education / outreach event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2394",
+      "task": "Education event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2394",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2399",
+      "target": "2395",
+      "task": "Education / outreach event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2395",
+      "task": "Education event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2395",
+      "task": "Meetups",
+      "count": 4
+    },
+    {
+      "source": "2399",
+      "target": "2396",
+      "task": "Education / outreach event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2396",
+      "task": "Education event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2396",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2399",
+      "target": "2397",
+      "task": "Education / outreach event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2397",
+      "task": "Education event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2397",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2399",
+      "target": "2398",
+      "task": "Education / outreach event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2398",
+      "task": "Education event",
+      "count": 7
+    },
+    {
+      "source": "2399",
+      "target": "2398",
+      "task": "Meetups",
+      "count": 4
+    },
+    {
+      "source": "2399",
+      "target": "2401",
+      "task": "Education / outreach event",
+      "count": 6
+    },
+    {
+      "source": "2399",
+      "target": "2401",
+      "task": "Education event",
+      "count": 6
+    },
+    {
+      "source": "2399",
+      "target": "2401",
+      "task": "Meetups",
+      "count": 2
+    },
+    {
+      "source": "2399",
+      "target": "2402",
+      "task": "Education / outreach event",
+      "count": 6
+    },
+    {
+      "source": "2399",
+      "target": "2402",
+      "task": "Education event",
+      "count": 5
+    },
+    {
+      "source": "2399",
+      "target": "2402",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2399",
+      "target": "2403",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2399",
+      "target": "2403",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2399",
+      "target": "2403",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2399",
+      "target": "2404",
+      "task": "Meetups",
+      "count": 2
+    },
+    {
+      "source": "2399",
+      "target": "2405",
+      "task": "Meetups",
+      "count": 2
+    },
+    {
+      "source": "2399",
+      "target": "2406",
+      "task": "Meetups",
+      "count": 2
+    },
+    {
+      "source": "2399",
+      "target": "2407",
+      "task": "Meetups",
+      "count": 1
+    },
+    {
+      "source": "2399",
+      "target": "2408",
+      "task": "Meetups",
+      "count": 1
+    },
+    {
+      "source": "2399",
+      "target": "2409",
+      "task": "Meetups",
+      "count": 1
+    },
+    {
+      "source": "2399",
+      "target": "2410",
+      "task": "Meetups",
+      "count": 1
+    },
+    {
+      "source": "2400",
+      "target": "2386",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2400",
+      "target": "2392",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2400",
+      "target": "465",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2400",
+      "target": "465",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2400",
+      "target": "465",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2401",
+      "target": "2393",
+      "task": "Team meetings",
+      "count": 4
+    },
+    {
+      "source": "2404",
+      "target": "2382",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2404",
+      "target": "2393",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2404",
+      "target": "2396",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2404",
+      "target": "2397",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2404",
+      "target": "2402",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2404",
+      "target": "2403",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2404",
+      "target": "2405",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2405",
+      "target": "2382",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2382",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2382",
+      "task": "Project administration",
+      "count": 2
+    },
+    {
+      "source": "2405",
+      "target": "2382",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2391",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2391",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2393",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2393",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2393",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2394",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2394",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2395",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2395",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2396",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2396",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2397",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2397",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2398",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2398",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2398",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2398",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2399",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2399",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2399",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2401",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2401",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2401",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2402",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2402",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2402",
+      "task": "Project administration",
+      "count": 2
+    },
+    {
+      "source": "2405",
+      "target": "2402",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2403",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2403",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2404",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2404",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2404",
+      "task": "Project administration",
+      "count": 2
+    },
+    {
+      "source": "2405",
+      "target": "2404",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2406",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2406",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2407",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2407",
+      "task": "Project administration",
+      "count": 2
+    },
+    {
+      "source": "2405",
+      "target": "2407",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2408",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2408",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2408",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2409",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2409",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2409",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2405",
+      "target": "2410",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2410",
+      "task": "No iGEM work",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2410",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2405",
+      "target": "2410",
+      "task": "Project administration",
+      "count": 2
+    },
+    {
+      "source": "2405",
+      "target": "2410",
+      "task": "Team meetings",
+      "count": 5
+    },
+    {
+      "source": "2406",
+      "target": "2382",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2406",
+      "target": "2391",
+      "task": "Team meetings",
+      "count": 3
+    },
+    {
+      "source": "2406",
+      "target": "2393",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2406",
+      "target": "2394",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2406",
+      "target": "2395",
+      "task": "Team meetings",
+      "count": 3
+    },
+    {
+      "source": "2406",
+      "target": "2396",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2406",
+      "target": "2397",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2406",
+      "target": "2398",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2406",
+      "target": "2399",
+      "task": "Team meetings",
+      "count": 3
+    },
+    {
+      "source": "2406",
+      "target": "2401",
+      "task": "Team meetings",
+      "count": 3
+    },
+    {
+      "source": "2406",
+      "target": "2402",
+      "task": "Team meetings",
+      "count": 3
+    },
+    {
+      "source": "2406",
+      "target": "2403",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2406",
+      "target": "2404",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2406",
+      "target": "2405",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2382",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2382",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2382",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2382",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2391",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2391",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2391",
+      "task": "Hardware development",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2391",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2393",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2393",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2393",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2394",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2394",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2394",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2395",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2395",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2395",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2396",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2396",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2396",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2397",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2397",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2397",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2398",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2398",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2398",
+      "task": "Hardware development",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2398",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2399",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2399",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2399",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2401",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2401",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2401",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2402",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2402",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2402",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2402",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2403",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2403",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2403",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2404",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2404",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2404",
+      "task": "Hardware development",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2404",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2404",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2405",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2405",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2405",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2405",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2406",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2406",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2407",
+      "target": "2406",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2408",
+      "target": "2382",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2408",
+      "target": "2382",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2391",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2391",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2391",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2393",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2393",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2393",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2408",
+      "target": "2393",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2394",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2394",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2395",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2395",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2396",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2396",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2408",
+      "target": "2396",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2397",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2397",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2408",
+      "target": "2397",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2398",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2398",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2398",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2399",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2399",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2401",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2401",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2402",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2402",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2403",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2403",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2404",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2404",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2404",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2405",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2408",
+      "target": "2405",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2406",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2406",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2407",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2407",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2408",
+      "target": "2407",
+      "task": "Writing / preparing presentations",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2382",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2382",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2382",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2382",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2391",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2391",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2391",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2391",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2393",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2393",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2393",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2393",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2394",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2394",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2394",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2395",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2395",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2395",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2395",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2396",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2396",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2396",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2396",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2397",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2397",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2397",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2397",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2398",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2398",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2398",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2398",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2399",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2399",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2399",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2399",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2401",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2401",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2401",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2402",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2402",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2402",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2402",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2403",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2403",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2403",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2403",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2404",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2404",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2404",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2404",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2405",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2405",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2405",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2406",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2406",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2406",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2406",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2407",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2407",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2407",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2407",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2408",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2408",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2408",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2408",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2409",
+      "target": "2410",
+      "task": "Brainstorming",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2410",
+      "task": "Meetups",
+      "count": 3
+    },
+    {
+      "source": "2409",
+      "target": "2410",
+      "task": "Planning tasks",
+      "count": 2
+    },
+    {
+      "source": "2409",
+      "target": "2410",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2382",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2382",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2410",
+      "target": "2382",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2382",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2382",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2410",
+      "target": "2391",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2393",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2393",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2394",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2395",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2396",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2396",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2396",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2396",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2396",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2397",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2398",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2410",
+      "target": "2399",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2402",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2402",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2410",
+      "target": "2404",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2404",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2410",
+      "target": "2404",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2404",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2404",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "2410",
+      "target": "2405",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2405",
+      "task": "Education / outreach event",
+      "count": 2
+    },
+    {
+      "source": "2410",
+      "target": "2405",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2405",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2405",
+      "task": "Team meetings",
+      "count": 3
+    },
+    {
+      "source": "2410",
+      "target": "2406",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2408",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2408",
+      "task": "Education / outreach event",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2408",
+      "task": "Education event",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2408",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2408",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "2410",
+      "target": "2409",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "465",
+      "target": "2386",
+      "task": "Brainstorming",
+      "count": 1
+    },
+    {
+      "source": "465",
+      "target": "2386",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "465",
+      "target": "2386",
+      "task": "Reading papers or other material",
+      "count": 1
+    },
+    {
+      "source": "573",
+      "target": "575",
+      "task": "Meetups",
+      "count": 1
+    },
+    {
+      "source": "573",
+      "target": "575",
+      "task": "Planning tasks",
+      "count": 1
+    },
+    {
+      "source": "573",
+      "target": "575",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "573",
+      "target": "579",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "573",
+      "target": "583",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "575",
+      "target": "573",
+      "task": "Team meetings",
+      "count": 2
+    },
+    {
+      "source": "575",
+      "target": "583",
+      "task": "Team meetings",
+      "count": 1
+    },
+    {
+      "source": "579",
+      "target": "573",
+      "task": "Team meetings",
+      "count": 1
+    }
+  ]
+}

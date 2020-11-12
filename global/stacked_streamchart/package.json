@@ -1,0 +1,14 @@
+{
+  "name": "@naila-elh/normalized-stacked-streamchart",
+  "main": "a6662a0bbcd7afd9@685.js",
+  "version": "685.0.0",
+  "homepage": "https://observablehq.com/@naila-elh/normalized-stacked-streamchart",
+  "author": {
+    "name": "Naïla El Haouari",
+    "url": "https://observablehq.com/@naila-elh"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}
