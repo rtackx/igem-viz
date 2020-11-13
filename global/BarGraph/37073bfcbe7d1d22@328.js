@@ -4,7 +4,7 @@ export default function define(runtime, observer) {
   const fileAttachments = new Map([["tasks@2.csv",new URL("./tasks.json",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
-md`# Sortable Bar Chart
+md`# Tasks done within team
 
 Use the dropdown menu to change the sort order.`
 )});
