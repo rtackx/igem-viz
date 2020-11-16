@@ -3,6 +3,9 @@ export default function define(runtime, observer) {
   main.variable(observer()).define(["md"], function(md){return(
 md`# World map example`
 )});
+main.variable(observer("title_wmap")).define(["md"], function(md){return(
+md`# World Map`
+)});
   main.variable(observer("map")).define("map", ["worldMap"], function(worldMap)
 {
   const container = document.createElement("div")

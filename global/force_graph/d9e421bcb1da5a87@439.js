@@ -5,6 +5,9 @@ export default function define(runtime, observer) {
   const main = runtime.module();
   const fileAttachments = new Map([["sample@1.json",new URL("./files/60993d89a2c04acd3a6548fe27f0a5041939593abea82a4fe84925fa2ad65bc4c792651d54477b5bb4158d5f14c483db47a225187cee5366cf65f4a1eb9daa12",import.meta.url)],["graph@8.json",new URL("./files/b2ccf2cec417887025162b830220c1ad7c7ab45f1cc98a09f74dbb5ebc1c4233b4e0605fc13554184931d5c34a3f31db8fb2a38fa88eff8bc4a94a97aba2fe24",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
+  main.variable(observer("title_fgraph")).define(["md"], function(md){return(
+md`# Force-Directed Graph with zoom and stroke scaling`
+)});
   main.variable(observer()).define(["md"], function(md){return(
 md`# Force-Directed Graph with zoom and stroke scaling (svg) - for iGEM CoSo
 
@@ -37,30 +40,30 @@ select({
 
   const l = data.links.map(d => Object.create(d));
   const nodes = data.nodes.map(d => Object.create(d));
-  
+
   const ll = l.filter(d => d.count >= link_strength) //Filter based on Link Strength
-  
+
   var links;
-  
+
   //To Filter based on Tasks
-  
+
   if (task == "All")
   {
     links = ll
   }
-  
+
   else
   {
     links = ll.filter(d => d.task == task)
   }
-  
+
   //******
-  
+
     var tooltip = d3.select("body")
 	.append("div")
 	.attr("class", "tooltip")
 	.style("opacity", 0);
-  
+
   //*******
 
   const simulation = d3.forceSimulation(nodes)
@@ -74,7 +77,7 @@ select({
   const svg = d3.create("svg")
       .attr("viewBox", [0, 0, width, height]);
   const g = svg.append("g")
-  
+
   const link = g.append("g")
       .attr("stroke", "#999")
       .attr("stroke-opacity", 1)
@@ -82,11 +85,11 @@ select({
     .data(links)
     .join("line")
       .attr("stroke-width", d => d.value);
-  
+
   const globalNode = g.append("g")
       .attr("stroke", "#fff")
       .attr("stroke-width", 1.5);
-  
+
   const node = globalNode
     .selectAll("circle")
     .data(nodes)
@@ -96,19 +99,19 @@ select({
       .call(drag(simulation))
     	.on('mouseover.fade', fade(0.1))
   	.on('mouseout.fade', fade(1));
-  
 
-  
+
+
   let zoomLvl = 1;
   let lastK = 0;
-  
+
   node.append("title")
       .text(d => d.id);
-  
- 
+
+
   simulation.on("tick", () => {
-    
-    
+
+
     link
         .attr("x1", d => d.source.x)
         .attr("y1", d => d.source.y)
@@ -118,14 +121,14 @@ select({
     node
         .attr("cx", d => d.x)
         .attr("cy", d => d.y);
-    
+
 
   });
-  
+
   function fade(opacity) {
     return d => {
       node.style('opacity', function (o) { return isConnected(d, o) ? 1 : opacity });
-      
+
       link.style('stroke-opacity', o => (o.source === d || o.target === d ? 1 : opacity));
       if(opacity === 1){
         node.style('opacity', 1)
@@ -134,7 +137,7 @@ select({
       }
     };
   }
-  
+
   const linkedByIndex = {};
   links.forEach(d => {
     linkedByIndex[`${d.source.index},${d.target.index}`] = 1;
@@ -153,7 +156,7 @@ select({
 
   function zoomed() {
     let e = d3.event
-    
+
     if(e.transform.k > 2 && lastK != e.transform.k){
       lastK = e.transform.k;
       console.log("zoomed");
@@ -161,12 +164,12 @@ select({
       globalNode.attr("stroke-width", 1.5/zoomLvl );
       link.attr("stroke-width",  d => (d.count)/(zoomLvl));
     }
-   
+
     g.attr("transform", e.transform);
   }
-  
-  
-  
+
+
+
   return svg.node();
 }
 );
@@ -192,24 +195,24 @@ function radius(d) {
 )});
   main.variable(observer("drag")).define("drag", ["d3"], function(d3){return(
 simulation => {
-  
+
   function dragstarted(d) {
     if (!d3.event.active) simulation.alphaTarget(0.3).restart();
     d.fx = d.x;
     d.fy = d.y;
   }
-  
+
   function dragged(d) {
     d.fx = d3.event.x;
     d.fy = d3.event.y;
   }
-  
+
   function dragended(d) {
     if (!d3.event.active) simulation.alphaTarget(0);
     d.fx = null;
     d.fy = null;
   }
-  
+
   return d3.drag()
       .on("start", dragstarted)
       .on("drag", dragged)

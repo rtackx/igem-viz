@@ -7,7 +7,7 @@
 <script src="//d3js.org/d3-shape.v0.6.min.js"></script>
 <body>
 	<div class="wrapper">
-		<h1>World Map</h1>
+		<div id="title_wmap"></div>
 		<div id="worldmap"></div>
 	</div>
 <script type="module">
@@ -17,6 +17,7 @@ import {Runtime, Library, Inspector} from "./runtime.js";
 
 
 const renders = {
+	"title_wmap": "#title_wmap",
 	"map": "#worldmap",
 };
 
@@ -29,7 +30,7 @@ const main = new Runtime().module(define, (name) => {
 });
 </script>
 <div class="wrapper">
-	<h1>Bubble graph of whole IGEM</h1>
+	<div id="title_circle"></div>
 	<div id="bubblegraph"></div>
 </div>
 <script type="module">
@@ -39,7 +40,8 @@ import {Runtime, Library, Inspector} from "./runtime.js";
 
 
 const renders = {
-"chart": "#bubblegraph",
+	"title_circle": "#title_circle",
+	"chart": "#bubblegraph",
 };
 
 for (const name in renders)
@@ -51,7 +53,7 @@ else return true;
 });
 </script>
 <div class="wrapper">
-	<h1>Tasks performed by all teams</h1>
+	<div id="title_bgraph"></div>
 	<div id="order"></div>
 	<div id="bargraph"></div>
 </div>
@@ -62,6 +64,7 @@ import {Runtime, Library, Inspector} from "./runtime.js";
 
 
 const renders = {
+"title_bgraph": "#title_bgraph",
 "viewof order": "#order",
 "chart": "#bargraph",
 };
@@ -75,7 +78,7 @@ else return true;
 });
 </script>
 <div class="wrapper">
-	<h1>Force-Directed Graph with zoom and stroke scaling</h1>
+	<div id="title_fgraph"></div>
 	<div id="link_str"></div>
 	<div id="tasks"></div>
 	<div id="force_graph"></div>
@@ -87,9 +90,10 @@ import {Runtime, Library, Inspector} from "./runtime.js";
 
 
 const renders = {
-"viewof link_strength": "#link_str",
-"viewof task": "#tasks",
-"chart": "#force_graph",
+	"title_fgraph": "#title_fgraph",
+	"viewof link_strength": "#link_str",
+	"viewof task": "#tasks",
+	"chart": "#force_graph",
 };
 
 for (const name in renders)
@@ -101,7 +105,7 @@ else return true;
 });
 </script>
 <div class="wrapper">
-	<h1>Normalized Stacked Streamchart</h1>
+	<div id="title_stream"></div>
 	<div id="legend"></div>
 	<div id="streamchart"></div>
 </div>
@@ -112,6 +116,7 @@ import {Runtime, Library, Inspector} from "./runtime.js";
 
 
 const renders = {
+"title_stream": "#title_stream",
 "key": "#legend",
 "chart": "#streamchart",
 };
@@ -125,7 +130,7 @@ else return true;
 });
 </script>
 <div class="wrapper">
-	<h1>Number of tasks completed over time</h1>
+	<div id="title_tasks"></div>
 	<div id="task_num"></div>
 </div>
 <script type="module">
@@ -135,6 +140,7 @@ import {Runtime, Library, Inspector} from "./runtime.js";
 
 
 const renders = {
+"title_tasks": "#title_tasks",
 "chart": "#task_num",
 };
 

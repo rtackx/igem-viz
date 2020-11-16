@@ -8,6 +8,9 @@ export default function define(runtime, observer) {
   main.variable(observer()).define(["md"], function(md){return(
 md`# Number of tasks`
 )});
+main.variable(observer("title_tasks")).define(["md"], function(md){return(
+md`# Number of tasks`
+)});
   main.variable(observer("chart")).define("chart", ["d3","width","height","data","area","xAxis","margin","yAxis","bisect","x","y","callout"], function(d3,width,height,data,area,xAxis,margin,yAxis,bisect,x,y,callout)
 {
   const svg = d3.create("svg")
