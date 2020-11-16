@@ -15,9 +15,16 @@
 import define from "./world_map/index.js";
 import {Runtime, Library, Inspector} from "./runtime.js";
 
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
-
+new Runtime().module(define, name => {
+  if (name === "md") {
+    console.log("AHA CAL!");
+    return new Inspector(document.querySelector("#md"));//i've tried with both custom div IDs, and the ID returned by the 'embed code' cell-menu option.
+  }
+if (name === "dataSelector") {
+    console.log("AHA SELECT!");
+    return new Inspector(document.querySelector("#div2"));
+  }
+});
 </script>
 <script type="module">
 

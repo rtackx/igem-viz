@@ -1,10 +1,10 @@
 // https://observablehq.com/@selimbs/sortable-bar-chart@328
 export default function define(runtime, observer) {
   const main = runtime.module();
-  const fileAttachments = new Map([["tasks@2.csv",new URL("./tasks.json",import.meta.url)]]);
+  const fileAttachments = new Map([["tasks@2.csv",new URL("./tasks.csv",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer()).define(["md"], function(md){return(
-md`# Tasks done within team
+md`# Tasks done in all teams
 
 Use the dropdown menu to change the sort order.`
 )});
