@@ -1,76 +1,157 @@
 <!DOCTYPE html>
+<html>
 <meta charset="utf-8">
-<title>Igem Viz</title>
+<title>Igem test Viz</title>
 <link rel="stylesheet" type="text/css" href="./inspector.css">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"> <!-- content="width=device-width, initial-scale=1.0"-->
 	<title>Igem Visualizations</title>
 </head>
-<body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="//d3js.org/d3-shape.v0.6.min.js"></script>
+<body>
+	<div class="wrapper">
+		<h1>World Map</h1>
+		<div id="worldmap"></div>
+	</div>
 <script type="module">
 
 import define from "./world_map/index.js";
 import {Runtime, Library, Inspector} from "./runtime.js";
 
-new Runtime().module(define, name => {
-  if (name === "md") {
-    console.log("AHA CAL!");
-    return new Inspector(document.querySelector("#md"));//i've tried with both custom div IDs, and the ID returned by the 'embed code' cell-menu option.
-  }
-if (name === "dataSelector") {
-    console.log("AHA SELECT!");
-    return new Inspector(document.querySelector("#div2"));
-  }
+
+const renders = {
+	"map": "#worldmap",
+};
+
+for (const name in renders)
+	renders[name] = document.querySelector(renders[name]);
+const main = new Runtime().module(define, (name) => {
+	if (renders[name])
+		return new Inspector(renders[name]);
+	else return true;
 });
 </script>
+<div class="wrapper">
+	<h1>Bubble graph of whole IGEM</h1>
+	<div id="bubblegraph"></div>
+</div>
 <script type="module">
 
 import define from "./CirclePack/index.js";
 import {Runtime, Library, Inspector} from "./runtime.js";
 
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
 
+const renders = {
+"chart": "#bubblegraph",
+};
+
+for (const name in renders)
+renders[name] = document.querySelector(renders[name]);
+const main = new Runtime().module(define, (name) => {
+if (renders[name])
+	return new Inspector(renders[name]);
+else return true;
+});
 </script>
+<div class="wrapper">
+	<h1>Tasks performed by all teams</h1>
+	<div id="order"></div>
+	<div id="bargraph"></div>
+</div>
 <script type="module">
 
 import define from "./BarGraph/index.js";
 import {Runtime, Library, Inspector} from "./runtime.js";
 
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
 
+const renders = {
+"viewof order": "#order",
+"chart": "#bargraph",
+};
+
+for (const name in renders)
+renders[name] = document.querySelector(renders[name]);
+const main = new Runtime().module(define, (name) => {
+if (renders[name])
+	return new Inspector(renders[name]);
+else return true;
+});
 </script>
+<div class="wrapper">
+	<h1>Force-Directed Graph with zoom and stroke scaling</h1>
+	<div id="link_str"></div>
+	<div id="tasks"></div>
+	<div id="force_graph"></div>
+</div>
 <script type="module">
 
 import define from "./force_graph/index.js";
 import {Runtime, Library, Inspector} from "./runtime.js";
 
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
 
+const renders = {
+"viewof link_strength": "#link_str",
+"viewof task": "#tasks",
+"chart": "#force_graph",
+};
+
+for (const name in renders)
+renders[name] = document.querySelector(renders[name]);
+const main = new Runtime().module(define, (name) => {
+if (renders[name])
+	return new Inspector(renders[name]);
+else return true;
+});
 </script>
+<div class="wrapper">
+	<h1>Normalized Stacked Streamchart</h1>
+	<div id="legend"></div>
+	<div id="streamchart"></div>
+</div>
 <script type="module">
 
 import define from "./stacked_streamchart/index.js";
 import {Runtime, Library, Inspector} from "./runtime.js";
 
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
 
+const renders = {
+"key": "#legend",
+"chart": "#streamchart",
+};
+
+for (const name in renders)
+renders[name] = document.querySelector(renders[name]);
+const main = new Runtime().module(define, (name) => {
+if (renders[name])
+	return new Inspector(renders[name]);
+else return true;
+});
 </script>
+<div class="wrapper">
+	<h1>Number of tasks completed over time</h1>
+	<div id="task_num"></div>
+</div>
 <script type="module">
 
 import define from "./task_number/index.js";
 import {Runtime, Library, Inspector} from "./runtime.js";
 
-const runtime = new Runtime();
-const main = runtime.module(define, Inspector.into(document.body));
 
+const renders = {
+"chart": "#task_num",
+};
+
+for (const name in renders)
+renders[name] = document.querySelector(renders[name]);
+const main = new Runtime().module(define, (name) => {
+if (renders[name])
+	return new Inspector(renders[name]);
+else return true;
+});
 </script>
+<h1> Bipartite network </h1>
 <canvas id="network" width="1200" height="600"></canvas>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script src="https://d3js.org/d3-shape.v0.6.min.js"></script>
@@ -1308,3 +1389,4 @@ function drawLink(l) {
 </script>
 
 </body>
+</html>
