@@ -18,10 +18,12 @@ Click to zoom in or out.`
   let view;
 
   const svg = d3.create("svg")
+      .attr("width", "60%")
+      // .attr("viewBox", `-${width / 2} -${height / 2} ${width} ${height}`)
       .attr("viewBox", `-${width / 2} -${height / 2} ${width} ${height}`)
       .style("display", "block")
       .style("margin", "0 -14px")
-      .style("background", color(0))
+      .style("background", color(-10))
       .style("cursor", "pointer")
       .on("click", (event) => zoom(event, root));
 
