@@ -1,14 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
-  <title>Igem Visualizations</title>
-  <link rel="stylesheet" type="text/css" href="./inspector.css">
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script src="//d3js.org/d3-shape.v0.6.min.js"></script>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Igem Visualizations</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./inspector.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="//d3js.org/d3-shape.v0.6.min.js"></script>
+
+    <style>
+      body {
+        background-color: rgba(0,0,0,0.0);
+      }
+      .wrapper {
+        position: relative;
+        width:80%;
+        transform: translate(11%,0);
+      }
+      h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        color: rgb(53, 53, 53);
+        padding-top: 2em;
+      }
+      #intro h1 {
+        font-family: "Poiret One", cursive;
+        font-weight: 500;
+        font-size: 40px;
+        padding-top: 3%;
+        color: rgb(39, 131, 92);
+        padding-bottom: 1em;
+      }
+      p {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.5em;
+        /* width: 80%; */
+      }
+      a{
+        color: rgb(39, 131, 92);
+        cursor: pointer;
+        text-decoration: none;
+      }
+      img {
+        opacity: 0.3;
+        width: 35%;
+        float: right;
+        padding: 0;
+        /* height:200px; */
+      }
+
+      #bubblegraph {
+        /* width: 100%; */
+        /* transform: translate(50%,0); */
+        /* float: left; */
+      }
+      #bubbletext {
+        color: black;
+        position: absolute;
+        width: 30%;
+        left: 70%;
+      }
+    </style>
+
+  </head>
 
   <body>
 
+    <!-- Intro image -->
+    <div>
+      <img src="img/net2.png"></img>
+    </div>
+    <!-- Intro -->
+    <div class="wrapper">
+      <div id="intro">
+        <h1>
+          Results from the iGEM TIES Project
+        </h1>
+        <p>
+          Here are some data visualisations from the <a href="https://igem-ties.info/">iGEM TIES project</a> obtained during the summer of the 2020 competition. The project aims at collecting data through journaling and questionnaires to better understand how iGEM teams work, what makes them thrive and succeed in the competition. This year was very special, with the pandemic creating extraordinary conditions for such a study to take place. Here we show some insights into some of the data that was collected this year!
+        </p>
+      </div>
+    </div>
+
     <!-- 1 World map -->
+    <!-- outcommented worldmap for now -->
+    <!--
     <div class="wrapper">
       <div id="title_wmap"></div>
       <div id="worldmap"></div>
@@ -33,11 +116,17 @@
         else return true;
       });
     </script>
+    -->
 
     <!-- 2 Bubble graph -->
     <div class="wrapper">
       <div id="title_circle"></div>
-      <div id="bubblegraph"></div>
+      <div>
+        <div id="bubbletext">
+          <p>Bubble graph representing for each team the proportion of work invested in each task, and their repartition between team members</p>
+        </div>
+        <div id="bubblegraph"></div>
+      </div>
     </div>
 
     <script type="module">
