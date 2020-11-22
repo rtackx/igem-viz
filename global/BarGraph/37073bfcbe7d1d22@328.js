@@ -103,7 +103,7 @@ g => g
       .attr("y", 5)
       .attr("x", 12)
       .attr("dx", -20)
-      .attr("dy", "-.3em")
+      .attr("dy", "0.3em")
       .attr("transform", "rotate(-50)")
       .attr("font-size", "13")
       .style("text-anchor", "end"))
