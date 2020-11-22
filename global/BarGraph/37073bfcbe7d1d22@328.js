@@ -39,7 +39,7 @@ Use the dropdown menu to change the sort order.`
       .attr("viewBox", [0, 0, width, height]);
 
   const bar = svg.append("g")
-      .attr("fill", "blue")
+      .attr("fill", "rgba(100,150,150,0.5")
     .selectAll("rect")
     .data(data)
     .join("rect")
@@ -104,12 +104,14 @@ g => g
       .attr("x", 12)
       .attr("dx", -20)
       .attr("dy", "-.3em")
-      .attr("transform", "rotate(-90)")
+      .attr("transform", "rotate(-50)")
+      .attr("font-size", "13")
       .style("text-anchor", "end"))
 )});
   main.variable(observer("yAxis")).define("yAxis", ["margin","d3","y"], function(margin,d3,y){return(
 g => g
     .attr("transform", `translate(${margin.left},0)`)
+    .attr("font-size", "13")
     .call(d3.axisLeft(y))
     .call(g => g.select(".domain").remove())
 )});
@@ -117,7 +119,7 @@ g => g
 500
 )});
   main.variable(observer("margin")).define("margin", function(){return(
-{top: 20, right: 0, bottom: 150, left: 40}
+{top: 20, right: 0, bottom: 170, left: 40}
 )});
   main.variable(observer("d3")).define("d3", ["require"], function(require){return(
 require("d3@6")
