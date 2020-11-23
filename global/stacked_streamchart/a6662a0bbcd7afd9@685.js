@@ -42,9 +42,6 @@ swatches({color, marginLeft: margin.left, columns: "180px"})
 
 
 
-
-
-
    const bigLine = svg
     .append("line")
     .attr("stroke", "black")

@@ -253,11 +253,6 @@
     <div class="wrapper">
       <div id="title_fgraph"></div>
       <div>
-        <!-- <div id="forcegraphintro">
-          <p>Team collaboration networks, based on team members collaborations across tasks.</p>
-          <p>Each link is weighted by the number of tasks done in collaboration between any two members.<br />
-            You can use the filters below to highlight strong collaborations only, or to select only a single task.</p>
-        </div> -->
         <div id="forcegraphtext">
           <p>Team collaboration networks, based on team members collaborations across tasks.</p>
           <p>Each link is weighted by the number of tasks done in collaboration between any two members. You can use the filters below to highlight strong collaborations only, or to select only a single task.</p>
@@ -385,7 +380,7 @@
             .force("x",d3.forceX(width/2))
             // .force("x",d3.forceX(function (d) {
               // return x(d.group);
-            // }).strength(0.2))                  // This her increases the separation between two types of nodes
+            // }).strength(0.2))                  // This here increases the separation between two types of nodes
             .force("y",d3.forceY(0.3*height))
             .force("collide", d3.forceCollide(35))
             .force("charge",d3.forceManyBody()

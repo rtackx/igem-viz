@@ -77,9 +77,6 @@ select({
   const svg = d3.create("svg")
       .attr("viewBox", [0, 0, width, height]);
 
-      // g.attr("transform", "translate(150,150)")
-      // g.attr("scale", "0.4")
-
   const g = svg.append("g")
 
   const link = g.append("g")
