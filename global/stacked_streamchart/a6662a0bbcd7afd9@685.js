@@ -6,10 +6,10 @@ export default function define(runtime, observer) {
   const fileAttachments = new Map([["data_week_percentage_pivot2.csv",new URL("./data_week_percentage_pivot2.csv",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer("title_stream")).define(["md"], function(md){return(
-md`# Normalized Stacked Streamchart`
+md`# Temporal activity`
 )});
   main.variable(observer()).define(["md"], function(md){return(
-md`# Normalized Stacked Streamchart
+md`# Temporal activity
 `
 )});
   main.variable(observer("key")).define("key", ["swatches","color","margin"], function(swatches,color,margin){return(

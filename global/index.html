@@ -122,6 +122,9 @@
       #bipartite_intro {
         padding-bottom: 2em;
       }
+      #bipartite_intro p {
+        padding-bottom: 2em;
+      }
 
     </style>
 
@@ -250,7 +253,7 @@
       <div id="title_fgraph"></div>
       <div>
         <div id="forcegraphintro">
-          <!-- <p>Team collaboration networks, based on team members collaborations across tasks.</p> -->
+          <p>Team collaboration networks, based on team members collaborations across tasks.</p>
           <p>Each link is weighted by the number of tasks done in collaboration between any two members.<br />
             You can use the filters below to highlight strong collaborations only, or to select only a single task.</p>
         </div>
@@ -349,9 +352,9 @@
     <!-- 7 Bipartite network -->
     <div class="wrapper">
       <div>
-        <h1> Bipartite network</h1>
+        <h1>Task sharing network</h1>
         <div id="bipartite_intro">
-          <p>Bipartite network corresponding to how users contributed to different tasks across teams.</p>
+          <p>An example team collaboration bipartite network corresponding to how users contributed to different tasks across teams.</p>
         </div>
         <div>
           <canvas id="network" width="1200" height="600"></canvas>
