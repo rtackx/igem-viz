@@ -27,6 +27,7 @@
         font-size: 30px;
         color: rgb(53, 53, 53);
         padding-top: 2em;
+        padding-bottom: 1em;
       }
       #intro h1 {
         font-family: "Poiret One", cursive;
@@ -67,6 +68,34 @@
         width: 30%;
         left: 70%;
       }
+      #link_str.observablehq {
+        font: 300 0.8rem sans-serif!important;
+        font-weight: 300!important;
+        margin-bottom: 5px;
+        color: grey;
+      }
+      #tasks.observablehq  {
+        font: 300 0.8rem sans-serif!important;
+        margin-top: 10px;
+        color: grey;
+      }
+
+      #title_bgraph h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        color: rgb(53, 53, 53);
+        padding-top: 2em;
+        padding-bottom: 1em;
+      }
+      #bargraphtext {
+        color: black;
+        position: absolute;
+        top: 6rem;
+        width: 30%;
+        left: 70%;
+      }
+
     </style>
 
   </head>
@@ -152,7 +181,12 @@
     <!-- 3 Bar graph -->
     <div class="wrapper">
       <div id="title_bgraph"></div>
-      <div id="order"></div>
+      <div>
+        <div id="order"></div>
+        <div id="bargraphtext">
+          <p>Proportion of work invested per task across all teams</p>
+        </div>
+      </div>
       <div id="bargraph"></div>
     </div>
 
