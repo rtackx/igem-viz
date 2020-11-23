@@ -184,7 +184,7 @@ FileAttachment("sample@1.json").json()
 FileAttachment("graph@8.json").json()
 )});
   main.variable(observer("height")).define("height", function(){return(
-600
+700
 )});
   main.variable(observer("color")).define("color", ["d3"], function(d3)
 {
