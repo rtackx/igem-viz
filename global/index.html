@@ -29,14 +29,6 @@
         padding-top: 2em;
         padding-bottom: 1em;
       }
-      #intro h1 {
-        font-family: "Poiret One", cursive;
-        font-weight: 500;
-        font-size: 40px;
-        padding-top: 3%;
-        color: rgb(39, 131, 92);
-        padding-bottom: 1em;
-      }
       p {
         font-family: 'Quicksand', sans-serif;
         font-weight: 300;
@@ -57,6 +49,16 @@
         /* height:200px; */
       }
 
+      #intro h1 {
+        font-family: "Poiret One", cursive;
+        font-weight: 500;
+        font-size: 40px;
+        padding-top: 3%;
+        color: rgb(39, 131, 92);
+        padding-bottom: 1em;
+      }
+
+      /* circle packing */
       #bubblegraph {
         /* width: 100%; */
         /* transform: translate(50%,0); */
@@ -68,6 +70,28 @@
         width: 30%;
         left: 70%;
       }
+
+      /* bar graph */
+      #title_bgraph h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        color: rgb(53, 53, 53);
+        padding-top: 2em;
+        padding-bottom: 1em;
+      }
+      #bargraphintro {
+        padding-bottom: 1em;
+      }
+      #bargraphtext {
+        color: black;
+        position: absolute;
+        top: 6em;
+        width: 30%;
+        left: 70%;
+      }
+
+      /* force directed graph */
       #link_str.observablehq {
         font: 300 0.8rem sans-serif!important;
         font-weight: 300!important;
@@ -78,22 +102,24 @@
         font: 300 0.8rem sans-serif!important;
         margin-top: 10px;
         color: grey;
+        padding-bottom: 3em!important;
       }
-
-      #title_bgraph h1 {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 300;
-        font-size: 30px;
-        color: rgb(53, 53, 53);
-        padding-top: 2em;
-        padding-bottom: 1em;
+      #forcegraphintro {
+        padding-bottom: 2em;
       }
-      #bargraphtext {
+      #forcegraphtext {
         color: black;
         position: absolute;
-        top: 6rem;
-        width: 30%;
-        left: 70%;
+        width: 60%;
+        left: 40%;
+      }
+      g#forcegraph {
+        transform: translate(150,150);
+        scale: 0.4;
+      }
+
+      #bipartite_intro {
+        padding-bottom: 2em;
       }
 
     </style>
@@ -182,10 +208,13 @@
     <div class="wrapper">
       <div id="title_bgraph"></div>
       <div>
-        <div id="order"></div>
-        <div id="bargraphtext">
-          <p>Proportion of work invested per task across all teams</p>
+        <div id="bargraphintro">
+          <p>Proportion of work invested per task across all teams.</p>
         </div>
+        <div id="order"></div>
+        <!-- <div id="bargraphtext">
+          <p>Proportion of work invested per task across all teams.</p>
+        </div> -->
       </div>
       <div id="bargraph"></div>
     </div>
@@ -211,12 +240,23 @@
       });
     </script>
 
-    <!-- 4 Force graph -->
+    <!-- 4 Force directed graph -->
     <div class="wrapper">
       <div id="title_fgraph"></div>
-      <div id="link_str"></div>
-      <div id="tasks"></div>
-      <div id="force_graph"></div>
+      <div>
+        <div id="forcegraphintro">
+          <p>Team collaboration networks, based on team members collaborations across tasks.</p>
+          <p>Each link is weighted by the number of tasks done in collaboration between any two members.<br />
+            You can use the filters below to highlight strong collaborations only, or to select only a single task.</p>
+        </div>
+        <!-- <div id="forcegraphtext">
+          <p>Team collaboration networks, based on team members collaborations across tasks.</p>
+          <p>Each link is weighted by the number of tasks done in collaboration between any two members. You can use the filters below to highlight strong collaborations only, or to select only a single task.</p>
+        </div> -->
+        <div id="link_str"></div>
+        <div id="tasks"></div>
+        <div id="force_graph"></div>
+      </div>
     </div>
 
     <script type="module">
@@ -244,8 +284,13 @@
     <!-- 5 Stream chart -->
     <div class="wrapper">
       <div id="title_stream"></div>
-      <div id="legend"></div>
-      <div id="streamchart"></div>
+      <div>
+        <div id="forcegraphintro">
+          <p>Proportion of tasks done across time.</p>
+        </div>
+        <div id="legend"></div>
+        <div id="streamchart"></div>
+      </div>
     </div>
 
     <script type="module">
@@ -270,7 +315,8 @@
     </script>
 
     <!-- 6 Task and teams network -->
-    <div class="wrapper">
+    <!-- For now outcommented -->
+    <!-- <div class="wrapper">
       <div id="title_tasks"></div>
       <div id="task_num"></div>
     </div>
@@ -293,10 +339,20 @@
         return new Inspector(renders[name]);
       else return true;
       });
-    </script>
+    </script> -->
 
-    <h1> Bipartite network </h1>
-    <canvas id="network" width="1200" height="600"></canvas>
+    <!-- 7 Bipartite network -->
+    <div class="wrapper">
+      <div>
+        <h1> Bipartite network</h1>
+        <div id="bipartite_intro">
+          <p>Bipartite network corresponding to how users contributed to different tasks across teams.</p>
+        </div>
+        <div>
+          <canvas id="network" width="1200" height="600"></canvas>
+        </div>
+      </div>
+    </div>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/d3-shape.v0.6.min.js"></script>
 
