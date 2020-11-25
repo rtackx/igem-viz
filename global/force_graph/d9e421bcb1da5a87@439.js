@@ -6,10 +6,10 @@ export default function define(runtime, observer) {
   const fileAttachments = new Map([["sample@1.json",new URL("./files/60993d89a2c04acd3a6548fe27f0a5041939593abea82a4fe84925fa2ad65bc4c792651d54477b5bb4158d5f14c483db47a225187cee5366cf65f4a1eb9daa12",import.meta.url)],["graph@8.json",new URL("./files/b2ccf2cec417887025162b830220c1ad7c7ab45f1cc98a09f74dbb5ebc1c4233b4e0605fc13554184931d5c34a3f31db8fb2a38fa88eff8bc4a94a97aba2fe24",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer("title_fgraph")).define(["md"], function(md){return(
-md`# Force-Directed Graph with zoom and stroke scaling`
+md`# Team collaboration networks`
 )});
   main.variable(observer()).define(["md"], function(md){return(
-md`# Force-Directed Graph with zoom and stroke scaling (svg) - for iGEM CoSo
+md`# Team collaboration networks (svg) - for iGEM CoSo
 
 Features = Filter based on edge attributes, Node Attributes, Zooming`
 )});
@@ -59,16 +59,16 @@ select({
 
   //******
 
-    var tooltip = d3.select("body")
-	.append("div")
-	.attr("class", "tooltip")
-	.style("opacity", 0);
+  var tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
 
   //*******
 
   const simulation = d3.forceSimulation(nodes)
       .force("link", d3.forceLink(links).id(d => d.id))
-      .force("charge", d3.forceManyBody().strength(-1500))
+      .force("charge", d3.forceManyBody().strength(-200))
       .force("center", d3.forceCenter(width / 2, height / 2))
       .force("x", d3.forceX())
       .force("y", d3.forceY());
@@ -76,6 +76,7 @@ select({
 
   const svg = d3.create("svg")
       .attr("viewBox", [0, 0, width, height]);
+
   const g = svg.append("g")
 
   const link = g.append("g")
@@ -180,7 +181,7 @@ FileAttachment("sample@1.json").json()
 FileAttachment("graph@8.json").json()
 )});
   main.variable(observer("height")).define("height", function(){return(
-600
+700
 )});
   main.variable(observer("color")).define("color", ["d3"], function(d3)
 {

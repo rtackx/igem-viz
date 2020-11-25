@@ -1,1396 +1,1589 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
-<title>Igem Visualizations</title>
-<link rel="stylesheet" type="text/css" href="./inspector.css">
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="//d3js.org/d3-shape.v0.6.min.js"></script>
-<body>
-	<div class="wrapper">
-		<div id="title_wmap"></div>
-		<div id="worldmap"></div>
-	</div>
-<script>
-var name_of_team = "Alma"
-</script>
-<script type="module">
 
-import define from "./world_map/index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
+  <head>
 
+    <meta charset="utf-8">
+    <title>Igem Visualizations</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./inspector.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="//d3js.org/d3-shape.v0.6.min.js"></script>
 
-const renders = {
-	"title_wmap": "#title_wmap",
-	"map": "#worldmap",
-};
+    <style>
+      body {
+        background-color: rgba(0,0,0,0.0);
+      }
+      .wrapper {
+        position: relative;
+        width:80%;
+        transform: translate(11%,0);
+      }
+      h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        color: rgb(53, 53, 53);
+        padding-top: 2em;
+        padding-bottom: 1em;
+      }
+      p {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 1.5em;
+        /* width: 80%; */
+      }
+      a{
+        color: rgb(39, 131, 92);
+        cursor: pointer;
+        text-decoration: none;
+      }
+      img {
+        opacity: 0.3;
+        width: 35%;
+        float: right;
+        padding: 0;
+        /* height:200px; */
+      }
 
-for (const name in renders)
-	renders[name] = document.querySelector(renders[name]);
-const main = new Runtime().module(define, (name) => {
-	if (renders[name])
-		return new Inspector(renders[name]);
-	else return true;
-});
-</script>
-<div class="wrapper">
-	<div id="title_circle"></div>
-	<div id="bubblegraph"></div>
-</div>
-<script type="module">
+      #intro h1 {
+        font-family: "Poiret One", cursive;
+        font-weight: 500;
+        font-size: 40px;
+        padding-top: 3%;
+        color: rgb(39, 131, 92);
+        padding-bottom: 1em;
+      }
 
-import define from "./CirclePack/index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
+      /* circle packing */
+      #bubblegraph {
+        /* width: 100%; */
+        /* transform: translate(50%,0); */
+        /* float: left; */
+      }
+      #bubbletext {
+        color: black;
+        position: absolute;
+        width: 30%;
+        left: 70%;
+      }
 
+      /* bar graph */
+      #title_bgraph h1 {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        color: rgb(53, 53, 53);
+        padding-top: 2em;
+        padding-bottom: 1em;
+      }
+      #bargraphintro {
+        padding-bottom: 1em;
+      }
+      #bargraphtext {
+        color: black;
+        position: absolute;
+        top: 6em;
+        width: 30%;
+        left: 70%;
+      }
 
-const renders = {
-	"title_circle": "#title_circle",
-	"chart": "#bubblegraph",
-};
+      /* force directed graph */
+      #link_str.observablehq {
+        font: 300 0.8rem sans-serif!important;
+        font-weight: 300!important;
+        margin-bottom: 5px;
+        color: grey;
+      }
+      #tasks.observablehq  {
+        font: 300 0.8rem sans-serif!important;
+        margin-top: 10px;
+        color: grey;
+        padding-bottom: 3em!important;
+      }
+      #forcegraphintro {
+        padding-bottom: 2em;
+      }
+      #forcegraphtext {
+        color: black;
+        position: absolute;
+        top: 8em;
+        width: 50%;
+        left: 50%;
+      }
+      g#forcegraph {
+        transform: translate(150,150);
+        scale: 0.4;
+      }
 
-for (const name in renders)
-renders[name] = document.querySelector(renders[name]);
-const main = new Runtime().module(define, (name) => {
-if (renders[name])
-	return new Inspector(renders[name]);
-else return true;
-});
-</script>
-<div class="wrapper">
-	<div id="title_bgraph"></div>
-	<div id="order"></div>
-	<div id="bargraph"></div>
-</div>
-<script type="module">
+      #bipartite_intro {
+        padding-bottom: 2em;
+      }
+      #bipartite_intro p {
+        padding-bottom: 2em;
+      }
 
-import define from "./BarGraph/index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
+    </style>
 
+  </head>
 
-const renders = {
-"title_bgraph": "#title_bgraph",
-"viewof order": "#order",
-"chart": "#bargraph",
-};
+  <body>
 
-for (const name in renders)
-renders[name] = document.querySelector(renders[name]);
-const main = new Runtime().module(define, (name) => {
-if (renders[name])
-	return new Inspector(renders[name]);
-else return true;
-});
-</script>
-<div class="wrapper">
-	<div id="title_fgraph"></div>
-	<div id="link_str"></div>
-	<div id="tasks"></div>
-	<div id="force_graph"></div>
-</div>
-<script type="module">
+    <!-- Intro image -->
+    <div>
+      <img src="img/net2.png"></img>
+    </div>
+    <!-- Intro -->
+    <div class="wrapper">
+      <div id="intro">
+        <h1>
+          Results from the iGEM TIES Project
+        </h1>
+        <p>
+          Here are some data visualisations from the <a href="https://igem-ties.info/">iGEM TIES project</a> obtained during the summer of the 2020 competition. The project aims at collecting data through journaling and questionnaires to better understand how iGEM teams work, what makes them thrive and succeed in the competition. This year was very special, with the pandemic creating extraordinary conditions for such a study to take place. Here we show some insights into some of the data that was collected this year!
+        </p>
+      </div>
+    </div>
 
-import define from "./force_graph/index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
+    <!-- 1 World map -->
+    <!-- outcommented worldmap for now -->
+    <!--
+    <div class="wrapper">
+      <div id="title_wmap"></div>
+      <div id="worldmap"></div>
+    </div>
 
+    <script>
+      var name_of_team = "Alma"
+    </script>
 
-const renders = {
-	"title_fgraph": "#title_fgraph",
-	"viewof link_strength": "#link_str",
-	"viewof task": "#tasks",
-	"chart": "#force_graph",
-};
+    <script type="module">
 
-for (const name in renders)
-renders[name] = document.querySelector(renders[name]);
-const main = new Runtime().module(define, (name) => {
-if (renders[name])
-	return new Inspector(renders[name]);
-else return true;
-});
-</script>
-<div class="wrapper">
-	<div id="title_stream"></div>
-	<div id="legend"></div>
-	<div id="streamchart"></div>
-</div>
-<script type="module">
-
-import define from "./stacked_streamchart/index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
-
-
-const renders = {
-"title_stream": "#title_stream",
-"key": "#legend",
-"chart": "#streamchart",
-};
-
-for (const name in renders)
-renders[name] = document.querySelector(renders[name]);
-const main = new Runtime().module(define, (name) => {
-if (renders[name])
-	return new Inspector(renders[name]);
-else return true;
-});
-</script>
-<div class="wrapper">
-	<div id="title_tasks"></div>
-	<div id="task_num"></div>
-</div>
-<script type="module">
-
-import define from "./task_number/index.js";
-import {Runtime, Library, Inspector} from "./runtime.js";
-
-
-const renders = {
-"title_tasks": "#title_tasks",
-"chart": "#task_num",
-};
-
-for (const name in renders)
-renders[name] = document.querySelector(renders[name]);
-const main = new Runtime().module(define, (name) => {
-if (renders[name])
-	return new Inspector(renders[name]);
-else return true;
-});
-</script>
-<h1> Bipartite network </h1>
-<canvas id="network" width="1200" height="600"></canvas>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="https://d3js.org/d3-shape.v0.6.min.js"></script>
-<script>
-
-var text_center = true;
-var nominal_base_node_size = 8;
-var nominal_text_size = 10;
-var max_text_size = 24;
-
-var size = d3.scalePow().exponent(1)
-    .domain([1,100])
-    .range([8,24]);
-
-var canvas = d3.select("#network"),
-    width = canvas.attr("width"),
-    height = canvas.attr("height"),
-    x = d3.scaleOrdinal().range([20,width-20])
-    ctx = canvas.node().getContext("2d"),
-    simulation = d3.forceSimulation()
-      .force("x",d3.forceX(width/2))
-      // .force("x",d3.forceX(function (d) {
-        // return x(d.group);
-      // }).strength(0.2))                  // This her increases the separation between two types of nodes
-      .force("y",d3.forceY(0.3*height))
-      .force("collide", d3.forceCollide(35))
-      .force("charge",d3.forceManyBody()
-          .strength(-700))
-      .force("link",d3.forceLink()
-         .id(function (d) {return d.id;}).strength(0.7)) ;
-
-graph = {
-"directed": false,
-"multigraph": false,
-"graph": {},
-"nodes": [
-{
- "group": 1,
- "id": "Collecting data / running assays",
- "degree": 3,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Interpreting results",
- "degree": 1,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Lab maintenance",
- "degree": 2,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Safety management",
- "degree": 1,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Brainstorming",
- "degree": 23,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Project administration",
- "degree": 6,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Reading papers or other material",
- "degree": 8,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Software development",
- "degree": 4,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Preparing samples",
- "degree": 2,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Developing protocols",
- "degree": 3,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Hardware development",
- "degree": 2,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Education event",
- "degree": 7,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Education / outreach event",
- "degree": 9,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Planning tasks",
- "degree": 19,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Writing / preparing presentations",
- "degree": 11,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Meetups",
- "degree": 13,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Team meetings",
- "degree": 26,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "No iGEM work",
- "degree": 4,
- "type": "circle"
-},
-{
- "group": 1,
- "id": "Analysing results",
- "degree": 2,
- "type": "circle"
-},
-{
- "group": 2,
- "id": "1287",
- "degree": 6,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2359",
- "degree": 4,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2361",
- "degree": 5,
- "type": "square"
-},
-{
- "group": 2,
- "id": "573",
- "degree": 3,
- "type": "square"
-},
-{
- "group": 2,
- "id": "1343",
- "degree": 4,
- "type": "square"
-},
-{
- "group": 2,
- "id": "575",
- "degree": 2,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2368",
- "degree": 3,
- "type": "square"
-},
-{
- "group": 2,
- "id": "579",
- "degree": 1,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2380",
- "degree": 4,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2382",
- "degree": 1,
- "type": "square"
-},
-{
- "group": 2,
- "id": "465",
- "degree": 11,
- "type": "square"
-},
-{
- "group": 2,
- "id": "466",
- "degree": 2,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2387",
- "degree": 1,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2388",
- "degree": 8,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2389",
- "degree": 4,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2391",
- "degree": 5,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2392",
- "degree": 2,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2393",
- "degree": 3,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2394",
- "degree": 13,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2395",
- "degree": 3,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2396",
- "degree": 5,
- "type": "square"
-},
-{
- "group": 2,
- "id": "1117",
- "degree": 1,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2398",
- "degree": 1,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2399",
- "degree": 3,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2400",
- "degree": 3,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2401",
- "degree": 1,
- "type": "square"
-},
-{
- "group": 2,
- "id": "1122",
- "degree": 1,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2397",
- "degree": 9,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2404",
- "degree": 1,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2405",
- "degree": 7,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2406",
- "degree": 5,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2407",
- "degree": 5,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2408",
- "degree": 5,
- "type": "square"
-},
-{
- "group": 2,
- "id": "1129",
- "degree": 1,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2409",
- "degree": 4,
- "type": "square"
-},
-{
- "group": 2,
- "id": "2410",
- "degree": 6,
- "type": "square"
-},
-{
- "group": 2,
- "id": "1134",
- "degree": 3,
- "type": "square"
-}
-],
-"links": [
-{
- "source": "Brainstorming",
- "target": "2389",
- "value": 3
-},
-{
- "source": "Project administration",
- "target": "2389",
- "value": 1
-},
-{
- "source": "Team meetings",
- "target": "2389",
- "value": 3
-},
-{
- "source": "Writing / preparing presentations",
- "target": "2389",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "2380",
- "value": 1
-},
-{
- "source": "Software development",
- "target": "2380",
- "value": 1
-},
-{
- "source": "Collecting data / running assays",
- "target": "2380",
- "value": 1
-},
-{
- "source": "Education event",
- "target": "2380",
- "value": 1
-},
-{
- "source": "Writing / preparing presentations",
- "target": "2387",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "465",
- "value": 3
-},
-{
- "source": "Preparing samples",
- "target": "465",
- "value": 2
-},
-{
- "source": "Team meetings",
- "target": "465",
- "value": 3
-},
-{
- "source": "Lab maintenance",
- "target": "465",
- "value": 2
-},
-{
- "source": "Developing protocols",
- "target": "465",
- "value": 2
-},
-{
- "source": "Planning tasks",
- "target": "465",
- "value": 3
-},
-{
- "source": "Analysing results",
- "target": "465",
- "value": 2
-},
-{
- "source": "Interpreting results",
- "target": "465",
- "value": 2
-},
-{
- "source": "Reading papers or other material",
- "target": "465",
- "value": 1
-},
-{
- "source": "Collecting data / running assays",
- "target": "465",
- "value": 1
-},
-{
- "source": "Meetups",
- "target": "465",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "2400",
- "value": 1
-},
-{
- "source": "Writing / preparing presentations",
- "target": "2400",
- "value": 1
-},
-{
- "source": "Planning tasks",
- "target": "2400",
- "value": 1
-},
-{
- "source": "Team meetings",
- "target": "2392",
- "value": 1
-},
-{
- "source": "Planning tasks",
- "target": "2392",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "466",
- "value": 1
-},
-{
- "source": "Planning tasks",
- "target": "466",
- "value": 1
-},
-{
- "source": "Planning tasks",
- "target": "573",
- "value": 4
-},
-{
- "source": "Team meetings",
- "target": "573",
- "value": 2
-},
-{
- "source": "Meetups",
- "target": "573",
- "value": 1
-},
-{
- "source": "Team meetings",
- "target": "579",
- "value": 1
-},
-{
- "source": "Team meetings",
- "target": "2388",
- "value": 1
-},
-{
- "source": "Writing / preparing presentations",
- "target": "2388",
- "value": 1
-},
-{
- "source": "Safety management",
- "target": "2388",
- "value": 1
-},
-{
- "source": "Project administration",
- "target": "2388",
- "value": 1
-},
-{
- "source": "Meetups",
- "target": "2388",
- "value": 1
-},
-{
- "source": "Reading papers or other material",
- "target": "2388",
- "value": 1
-},
-{
- "source": "No iGEM work",
- "target": "2388",
- "value": 1
-},
-{
- "source": "Software development",
- "target": "2388",
- "value": 1
-},
-{
- "source": "Team meetings",
- "target": "575",
- "value": 2
-},
-{
- "source": "Project administration",
- "target": "575",
- "value": 2
-},
-{
- "source": "Team meetings",
- "target": "2359",
- "value": 11
-},
-{
- "source": "Brainstorming",
- "target": "2359",
- "value": 2
-},
-{
- "source": "Project administration",
- "target": "2359",
- "value": 1
-},
-{
- "source": "Meetups",
- "target": "2359",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "2361",
- "value": 4
-},
-{
- "source": "Team meetings",
- "target": "2361",
- "value": 14
-},
-{
- "source": "Writing / preparing presentations",
- "target": "2361",
- "value": 4
-},
-{
- "source": "Meetups",
- "target": "2361",
- "value": 4
-},
-{
- "source": "Planning tasks",
- "target": "2361",
- "value": 6
-},
-{
- "source": "Team meetings",
- "target": "1129",
- "value": 3
-},
-{
- "source": "Brainstorming",
- "target": "1134",
- "value": 1
-},
-{
- "source": "Reading papers or other material",
- "target": "1134",
- "value": 1
-},
-{
- "source": "Planning tasks",
- "target": "1134",
- "value": 1
-},
-{
- "source": "Team meetings",
- "target": "1117",
- "value": 2
-},
-{
- "source": "Brainstorming",
- "target": "1122",
- "value": 1
-},
-{
- "source": "Planning tasks",
- "target": "1287",
- "value": 5
-},
-{
- "source": "Team meetings",
- "target": "1287",
- "value": 3
-},
-{
- "source": "Education / outreach event",
- "target": "1287",
- "value": 8
-},
-{
- "source": "No iGEM work",
- "target": "1287",
- "value": 7
-},
-{
- "source": "Writing / preparing presentations",
- "target": "1287",
- "value": 1
-},
-{
- "source": "Meetups",
- "target": "1287",
- "value": 2
-},
-{
- "source": "Brainstorming",
- "target": "1343",
- "value": 1
-},
-{
- "source": "Software development",
- "target": "1343",
- "value": 1
-},
-{
- "source": "Writing / preparing presentations",
- "target": "1343",
- "value": 1
-},
-{
- "source": "Team meetings",
- "target": "1343",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "2368",
- "value": 1
-},
-{
- "source": "Planning tasks",
- "target": "2368",
- "value": 2
-},
-{
- "source": "Reading papers or other material",
- "target": "2368",
- "value": 1
-},
-{
- "source": "Team meetings",
- "target": "2404",
- "value": 2
-},
-{
- "source": "Team meetings",
- "target": "2401",
- "value": 4
-},
-{
- "source": "Education event",
- "target": "2399",
- "value": 7
-},
-{
- "source": "Education / outreach event",
- "target": "2399",
- "value": 7
-},
-{
- "source": "Meetups",
- "target": "2399",
- "value": 4
-},
-{
- "source": "Team meetings",
- "target": "2398",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "2397",
- "value": 2
-},
-{
- "source": "Team meetings",
- "target": "2397",
- "value": 20
-},
-{
- "source": "Planning tasks",
- "target": "2397",
- "value": 5
-},
-{
- "source": "Meetups",
- "target": "2397",
- "value": 20
-},
-{
- "source": "Writing / preparing presentations",
- "target": "2397",
- "value": 4
-},
-{
- "source": "No iGEM work",
- "target": "2397",
- "value": 2
-},
-{
- "source": "Project administration",
- "target": "2397",
- "value": 3
-},
-{
- "source": "Education / outreach event",
- "target": "2397",
- "value": 7
-},
-{
- "source": "Education event",
- "target": "2397",
- "value": 7
-},
-{
- "source": "Brainstorming",
- "target": "2405",
- "value": 3
-},
-{
- "source": "Planning tasks",
- "target": "2405",
- "value": 3
-},
-{
- "source": "Project administration",
- "target": "2405",
- "value": 2
-},
-{
- "source": "Education / outreach event",
- "target": "2405",
- "value": 5
-},
-{
- "source": "No iGEM work",
- "target": "2405",
- "value": 1
-},
-{
- "source": "Team meetings",
- "target": "2405",
- "value": 6
-},
-{
- "source": "Education event",
- "target": "2405",
- "value": 7
-},
-{
- "source": "Brainstorming",
- "target": "2408",
- "value": 2
-},
-{
- "source": "Planning tasks",
- "target": "2408",
- "value": 2
-},
-{
- "source": "Team meetings",
- "target": "2408",
- "value": 2
-},
-{
- "source": "Education / outreach event",
- "target": "2408",
- "value": 2
-},
-{
- "source": "Writing / preparing presentations",
- "target": "2408",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "2409",
- "value": 2
-},
-{
- "source": "Meetups",
- "target": "2409",
- "value": 7
-},
-{
- "source": "Planning tasks",
- "target": "2409",
- "value": 7
-},
-{
- "source": "Team meetings",
- "target": "2409",
- "value": 6
-},
-{
- "source": "Brainstorming",
- "target": "2410",
- "value": 3
-},
-{
- "source": "Education / outreach event",
- "target": "2410",
- "value": 5
-},
-{
- "source": "Education event",
- "target": "2410",
- "value": 2
-},
-{
- "source": "Developing protocols",
- "target": "2410",
- "value": 1
-},
-{
- "source": "Planning tasks",
- "target": "2410",
- "value": 2
-},
-{
- "source": "Team meetings",
- "target": "2410",
- "value": 9
-},
-{
- "source": "Meetups",
- "target": "2382",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "2391",
- "value": 1
-},
-{
- "source": "Team meetings",
- "target": "2391",
- "value": 5
-},
-{
- "source": "Reading papers or other material",
- "target": "2391",
- "value": 3
-},
-{
- "source": "Writing / preparing presentations",
- "target": "2391",
- "value": 3
-},
-{
- "source": "Planning tasks",
- "target": "2391",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "2393",
- "value": 1
-},
-{
- "source": "Planning tasks",
- "target": "2393",
- "value": 1
-},
-{
- "source": "Meetups",
- "target": "2393",
- "value": 1
-},
-{
- "source": "Team meetings",
- "target": "2394",
- "value": 6
-},
-{
- "source": "Meetups",
- "target": "2394",
- "value": 8
-},
-{
- "source": "Education event",
- "target": "2394",
- "value": 6
-},
-{
- "source": "Planning tasks",
- "target": "2394",
- "value": 8
-},
-{
- "source": "Reading papers or other material",
- "target": "2394",
- "value": 1
-},
-{
- "source": "Lab maintenance",
- "target": "2394",
- "value": 1
-},
-{
- "source": "Collecting data / running assays",
- "target": "2394",
- "value": 1
-},
-{
- "source": "Analysing results",
- "target": "2394",
- "value": 1
-},
-{
- "source": "Preparing samples",
- "target": "2394",
- "value": 1
-},
-{
- "source": "Software development",
- "target": "2394",
- "value": 1
-},
-{
- "source": "Education / outreach event",
- "target": "2394",
- "value": 6
-},
-{
- "source": "Brainstorming",
- "target": "2394",
- "value": 4
-},
-{
- "source": "Hardware development",
- "target": "2394",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "2395",
- "value": 1
-},
-{
- "source": "Reading papers or other material",
- "target": "2395",
- "value": 1
-},
-{
- "source": "Writing / preparing presentations",
- "target": "2395",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "2396",
- "value": 1
-},
-{
- "source": "Education / outreach event",
- "target": "2396",
- "value": 1
-},
-{
- "source": "Developing protocols",
- "target": "2396",
- "value": 1
-},
-{
- "source": "Education event",
- "target": "2396",
- "value": 1
-},
-{
- "source": "Team meetings",
- "target": "2396",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "2407",
- "value": 2
-},
-{
- "source": "Education / outreach event",
- "target": "2407",
- "value": 2
-},
-{
- "source": "Team meetings",
- "target": "2407",
- "value": 2
-},
-{
- "source": "Hardware development",
- "target": "2407",
- "value": 2
-},
-{
- "source": "Planning tasks",
- "target": "2407",
- "value": 2
-},
-{
- "source": "Planning tasks",
- "target": "2406",
- "value": 2
-},
-{
- "source": "Reading papers or other material",
- "target": "2406",
- "value": 1
-},
-{
- "source": "Brainstorming",
- "target": "2406",
- "value": 2
-},
-{
- "source": "Team meetings",
- "target": "2406",
- "value": 3
-},
-{
- "source": "Meetups",
- "target": "2406",
- "value": 1
-}
-]
-};
+      import define from "./world_map/index.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
 
 
+      const renders = {
+        "title_wmap": "#title_wmap",
+        "map": "#worldmap",
+      };
 
-var labels = d3.set(graph.nodes.map(function(d) {
-      return d.group;
-  }));
+      for (const name in renders)
+        renders[name] = document.querySelector(renders[name]);
+      const main = new Runtime().module(define, (name) => {
+        if (renders[name])
+          return new Inspector(renders[name]);
+        else return true;
+      });
+    </script>
+    -->
 
-var colourScale = d3.scaleOrdinal()
-      .domain(labels)
-      .range(['#66c2a5','#fc8d62']);
+    <!-- 2 Bubble graph -->
+    <div class="wrapper">
+      <div id="title_circle"></div>
+      <div>
+        <div id="bubbletext">
+          <p>Bubble graph representing for each team the proportion of work invested in each task, and their repartition between team members</p>
+        </div>
+        <div id="bubblegraph"></div>
+      </div>
+    </div>
 
-  var shapeScale = d3.scaleOrdinal()
-      .domain(labels)
-      .range([d3_shape.symbolCircle, d3_shape.symbolSquare]);
+    <script type="module">
 
-
-
-  function drawNode(d) {
-
-      var symbol = d3_shape.symbol()
-          .type(shapeScale(d.type))
-          .size(5*d.degree*d.degree)
-          .context(ctx);
-
-      ctx.translate(d.x, d.y);
-      ctx.fillStyle = colourScale(d.type);
-      ctx.beginPath();
-      symbol();
-      ctx.closePath();
-      ctx.fill();
-      ctx.stroke();
-      ctx.translate(-d.x, -d.y);
-      ctx.font = "10px Comic Sans MS";
-  ctx.fillStyle = "Black";
-  ctx.textAlign = "center";
-      ctx.fillText(d.id,d.x,d.y);
-}
-
-  simulation
-  .nodes(graph.nodes)
-  .on("tick", update)
-  .force("link")
-  .links(graph.links);
+      import define from "./CirclePack/index.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
 
 
-canvas
-    .call(d3.drag()
-      .container(canvas.node())
-      .subject(dragsubject)
-      .on("start", dragstarted)
-      .on("drag", dragged)
-      .on("end", dragended));
+      const renders = {
+        "title_circle": "#title_circle",
+        "chart": "#bubblegraph",
+      };
 
-function update() {
-  ctx.clearRect(0,0,width,height);
-  ctx.fillStyle = '#fc8d62';
-      ctx.beginPath();
-      ctx.rect(100, 75, 10, 10);
-      ctx.closePath();
-      ctx.fill();
-      ctx.stroke();
-      ctx.font = "12px Comic Sans MS";
-  ctx.fillStyle = "Black";
-  ctx.textAlign = "center";
-      ctx.fillText('USER-ID',150,85);
+      for (const name in renders)
+      renders[name] = document.querySelector(renders[name]);
+      const main = new Runtime().module(define, (name) => {
+      if (renders[name])
+        return new Inspector(renders[name]);
+      else return true;
+      });
+    </script>
 
+    <!-- 3 Bar graph -->
+    <div class="wrapper">
+      <div id="title_bgraph"></div>
+      <div>
+        <div id="bargraphintro">
+          <p>Proportion of work invested per task across all teams.</p>
+        </div>
+        <div id="order"></div>
+        <!-- <div id="bargraphtext">
+          <p>Proportion of work invested per task across all teams.</p>
+        </div> -->
+      </div>
+      <div id="bargraph"></div>
+    </div>
 
-      ctx.fillStyle = '#66c2a5';
-      ctx.beginPath();
-      ctx.arc(105, 60, 6, 0, 2*Math.PI);
-      ctx.closePath();
-      ctx.fill();
-      ctx.stroke();
-      ctx.font = "12px Comic Sans MS";
-  ctx.fillStyle = "Black";
-  ctx.textAlign = "center";
-      ctx.fillText('TASKS',150,65);
+    <script type="module">
 
-  ctx.fillStyle = '#aaa'
-  graph.links.forEach(drawLink);
-
-  ctx.lineWidth=1;
-  ctx.globalAlpha = 1;
-  graph.nodes.forEach(drawNode);
-
-}
-
-function dragsubject() {
-  return simulation.find(d3.event.x, d3.event.y);
-}
-
-function dragstarted() {
-  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-  d3.event.subject.fx = d3.event.subject.x;
-  d3.event.subject.fy = d3.event.subject.y;
-  console.log(d3.event.subject);
-}
-
-function dragged() {
-  d3.event.subject.fx = d3.event.x;
-  d3.event.subject.fy = d3.event.y;
-}
-
-function dragended() {
-  if (!d3.event.active) simulation.alphaTarget(0);
-  d3.event.subject.fx = null;
-  d3.event.subject.fy = null;
-}
+      import define from "./BarGraph/index.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
 
 
-function drawLink(l) {
+      const renders = {
+      "title_bgraph": "#title_bgraph",
+      "viewof order": "#order",
+      "chart": "#bargraph",
+      };
 
-  ctx.beginPath();
-  ctx.moveTo(l.source.x,l.source.y);
-  ctx.lineTo(l.target.x,l.target.y);
-  ctx.lineWidth = l.value
-  ctx.globalAlpha = 0.7;
-  ctx.strokeStyle = '#aaa';
-  ctx.stroke();
-}
+      for (const name in renders)
+      renders[name] = document.querySelector(renders[name]);
+      const main = new Runtime().module(define, (name) => {
+      if (renders[name])
+        return new Inspector(renders[name]);
+      else return true;
+      });
+    </script>
+
+    <!-- 4 Force directed graph -->
+    <div class="wrapper">
+      <div id="title_fgraph"></div>
+      <div>
+        <div id="forcegraphtext">
+          <p>Team collaboration networks, based on team members collaborations across tasks.</p>
+          <p>Each link is weighted by the number of tasks done in collaboration between any two members. You can use the filters below to highlight strong collaborations only, or to select only a single task.</p>
+        </div>
+        <div id="link_str"></div>
+        <div id="tasks"></div>
+        <div id="force_graph"></div>
+      </div>
+    </div>
+
+    <script type="module">
+
+      import define from "./force_graph/index.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+
+
+      const renders = {
+        "title_fgraph": "#title_fgraph",
+        "viewof link_strength": "#link_str",
+        "viewof task": "#tasks",
+        "chart": "#force_graph",
+      };
+
+      for (const name in renders)
+      renders[name] = document.querySelector(renders[name]);
+      const main = new Runtime().module(define, (name) => {
+      if (renders[name])
+        return new Inspector(renders[name]);
+      else return true;
+      });
+    </script>
+
+    <!-- 5 Stream chart -->
+    <div class="wrapper">
+      <div id="title_stream"></div>
+      <div>
+        <div id="forcegraphintro">
+          <p>Proportion of tasks done across time.</p>
+        </div>
+        <div id="legend"></div>
+        <div id="streamchart"></div>
+      </div>
+    </div>
+
+    <script type="module">
+
+      import define from "./stacked_streamchart/index.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+
+
+      const renders = {
+      "title_stream": "#title_stream",
+      "key": "#legend",
+      "chart": "#streamchart",
+      };
+
+      for (const name in renders)
+      renders[name] = document.querySelector(renders[name]);
+      const main = new Runtime().module(define, (name) => {
+      if (renders[name])
+        return new Inspector(renders[name]);
+      else return true;
+      });
+    </script>
+
+    <!-- 6 Task and teams network -->
+    <!-- For now outcommented -->
+    <!-- <div class="wrapper">
+      <div id="title_tasks"></div>
+      <div id="task_num"></div>
+    </div>
+
+    <script type="module">
+
+      import define from "./task_number/index.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+
+
+      const renders = {
+      "title_tasks": "#title_tasks",
+      "chart": "#task_num",
+      };
+
+      for (const name in renders)
+      renders[name] = document.querySelector(renders[name]);
+      const main = new Runtime().module(define, (name) => {
+      if (renders[name])
+        return new Inspector(renders[name]);
+      else return true;
+      });
+    </script> -->
+
+    <!-- 7 Bipartite network -->
+    <div class="wrapper">
+      <div>
+        <h1>Task sharing network</h1>
+        <div id="bipartite_intro">
+          <p>An example team collaboration bipartite network corresponding to how users contributed to different tasks across teams.</p>
+        </div>
+        <div>
+          <canvas id="network" width="1200" height="600"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-shape.v0.6.min.js"></script>
+
+    <script>
+
+      var text_center = true;
+      var nominal_base_node_size = 8;
+      var nominal_text_size = 10;
+      var max_text_size = 24;
+
+      var size = d3.scalePow().exponent(1)
+          .domain([1,100])
+          .range([8,24]);
+
+      var canvas = d3.select("#network"),
+          width = canvas.attr("width"),
+          height = canvas.attr("height"),
+          x = d3.scaleOrdinal().range([20,width-20])
+          ctx = canvas.node().getContext("2d"),
+          simulation = d3.forceSimulation()
+            .force("x",d3.forceX(width/2))
+            // .force("x",d3.forceX(function (d) {
+              // return x(d.group);
+            // }).strength(0.2))                  // This here increases the separation between two types of nodes
+            .force("y",d3.forceY(0.3*height))
+            .force("collide", d3.forceCollide(35))
+            .force("charge",d3.forceManyBody()
+                .strength(-700))
+            .force("link",d3.forceLink()
+              .id(function (d) {return d.id;}).strength(0.7)) ;
+
+      graph = {
+      "directed": false,
+      "multigraph": false,
+      "graph": {},
+      "nodes": [
+      {
+      "group": 1,
+      "id": "Collecting data / running assays",
+      "degree": 3,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Interpreting results",
+      "degree": 1,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Lab maintenance",
+      "degree": 2,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Safety management",
+      "degree": 1,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Brainstorming",
+      "degree": 23,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Project administration",
+      "degree": 6,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Reading papers or other material",
+      "degree": 8,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Software development",
+      "degree": 4,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Preparing samples",
+      "degree": 2,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Developing protocols",
+      "degree": 3,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Hardware development",
+      "degree": 2,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Education event",
+      "degree": 7,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Education / outreach event",
+      "degree": 9,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Planning tasks",
+      "degree": 19,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Writing / preparing presentations",
+      "degree": 11,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Meetups",
+      "degree": 13,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Team meetings",
+      "degree": 26,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "No iGEM work",
+      "degree": 4,
+      "type": "circle"
+      },
+      {
+      "group": 1,
+      "id": "Analysing results",
+      "degree": 2,
+      "type": "circle"
+      },
+      {
+      "group": 2,
+      "id": "1287",
+      "degree": 6,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2359",
+      "degree": 4,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2361",
+      "degree": 5,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "573",
+      "degree": 3,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "1343",
+      "degree": 4,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "575",
+      "degree": 2,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2368",
+      "degree": 3,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "579",
+      "degree": 1,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2380",
+      "degree": 4,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2382",
+      "degree": 1,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "465",
+      "degree": 11,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "466",
+      "degree": 2,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2387",
+      "degree": 1,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2388",
+      "degree": 8,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2389",
+      "degree": 4,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2391",
+      "degree": 5,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2392",
+      "degree": 2,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2393",
+      "degree": 3,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2394",
+      "degree": 13,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2395",
+      "degree": 3,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2396",
+      "degree": 5,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "1117",
+      "degree": 1,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2398",
+      "degree": 1,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2399",
+      "degree": 3,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2400",
+      "degree": 3,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2401",
+      "degree": 1,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "1122",
+      "degree": 1,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2397",
+      "degree": 9,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2404",
+      "degree": 1,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2405",
+      "degree": 7,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2406",
+      "degree": 5,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2407",
+      "degree": 5,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2408",
+      "degree": 5,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "1129",
+      "degree": 1,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2409",
+      "degree": 4,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "2410",
+      "degree": 6,
+      "type": "square"
+      },
+      {
+      "group": 2,
+      "id": "1134",
+      "degree": 3,
+      "type": "square"
+      }
+      ],
+      "links": [
+      {
+      "source": "Brainstorming",
+      "target": "2389",
+      "value": 3
+      },
+      {
+      "source": "Project administration",
+      "target": "2389",
+      "value": 1
+      },
+      {
+      "source": "Team meetings",
+      "target": "2389",
+      "value": 3
+      },
+      {
+      "source": "Writing / preparing presentations",
+      "target": "2389",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2380",
+      "value": 1
+      },
+      {
+      "source": "Software development",
+      "target": "2380",
+      "value": 1
+      },
+      {
+      "source": "Collecting data / running assays",
+      "target": "2380",
+      "value": 1
+      },
+      {
+      "source": "Education event",
+      "target": "2380",
+      "value": 1
+      },
+      {
+      "source": "Writing / preparing presentations",
+      "target": "2387",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "465",
+      "value": 3
+      },
+      {
+      "source": "Preparing samples",
+      "target": "465",
+      "value": 2
+      },
+      {
+      "source": "Team meetings",
+      "target": "465",
+      "value": 3
+      },
+      {
+      "source": "Lab maintenance",
+      "target": "465",
+      "value": 2
+      },
+      {
+      "source": "Developing protocols",
+      "target": "465",
+      "value": 2
+      },
+      {
+      "source": "Planning tasks",
+      "target": "465",
+      "value": 3
+      },
+      {
+      "source": "Analysing results",
+      "target": "465",
+      "value": 2
+      },
+      {
+      "source": "Interpreting results",
+      "target": "465",
+      "value": 2
+      },
+      {
+      "source": "Reading papers or other material",
+      "target": "465",
+      "value": 1
+      },
+      {
+      "source": "Collecting data / running assays",
+      "target": "465",
+      "value": 1
+      },
+      {
+      "source": "Meetups",
+      "target": "465",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2400",
+      "value": 1
+      },
+      {
+      "source": "Writing / preparing presentations",
+      "target": "2400",
+      "value": 1
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2400",
+      "value": 1
+      },
+      {
+      "source": "Team meetings",
+      "target": "2392",
+      "value": 1
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2392",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "466",
+      "value": 1
+      },
+      {
+      "source": "Planning tasks",
+      "target": "466",
+      "value": 1
+      },
+      {
+      "source": "Planning tasks",
+      "target": "573",
+      "value": 4
+      },
+      {
+      "source": "Team meetings",
+      "target": "573",
+      "value": 2
+      },
+      {
+      "source": "Meetups",
+      "target": "573",
+      "value": 1
+      },
+      {
+      "source": "Team meetings",
+      "target": "579",
+      "value": 1
+      },
+      {
+      "source": "Team meetings",
+      "target": "2388",
+      "value": 1
+      },
+      {
+      "source": "Writing / preparing presentations",
+      "target": "2388",
+      "value": 1
+      },
+      {
+      "source": "Safety management",
+      "target": "2388",
+      "value": 1
+      },
+      {
+      "source": "Project administration",
+      "target": "2388",
+      "value": 1
+      },
+      {
+      "source": "Meetups",
+      "target": "2388",
+      "value": 1
+      },
+      {
+      "source": "Reading papers or other material",
+      "target": "2388",
+      "value": 1
+      },
+      {
+      "source": "No iGEM work",
+      "target": "2388",
+      "value": 1
+      },
+      {
+      "source": "Software development",
+      "target": "2388",
+      "value": 1
+      },
+      {
+      "source": "Team meetings",
+      "target": "575",
+      "value": 2
+      },
+      {
+      "source": "Project administration",
+      "target": "575",
+      "value": 2
+      },
+      {
+      "source": "Team meetings",
+      "target": "2359",
+      "value": 11
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2359",
+      "value": 2
+      },
+      {
+      "source": "Project administration",
+      "target": "2359",
+      "value": 1
+      },
+      {
+      "source": "Meetups",
+      "target": "2359",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2361",
+      "value": 4
+      },
+      {
+      "source": "Team meetings",
+      "target": "2361",
+      "value": 14
+      },
+      {
+      "source": "Writing / preparing presentations",
+      "target": "2361",
+      "value": 4
+      },
+      {
+      "source": "Meetups",
+      "target": "2361",
+      "value": 4
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2361",
+      "value": 6
+      },
+      {
+      "source": "Team meetings",
+      "target": "1129",
+      "value": 3
+      },
+      {
+      "source": "Brainstorming",
+      "target": "1134",
+      "value": 1
+      },
+      {
+      "source": "Reading papers or other material",
+      "target": "1134",
+      "value": 1
+      },
+      {
+      "source": "Planning tasks",
+      "target": "1134",
+      "value": 1
+      },
+      {
+      "source": "Team meetings",
+      "target": "1117",
+      "value": 2
+      },
+      {
+      "source": "Brainstorming",
+      "target": "1122",
+      "value": 1
+      },
+      {
+      "source": "Planning tasks",
+      "target": "1287",
+      "value": 5
+      },
+      {
+      "source": "Team meetings",
+      "target": "1287",
+      "value": 3
+      },
+      {
+      "source": "Education / outreach event",
+      "target": "1287",
+      "value": 8
+      },
+      {
+      "source": "No iGEM work",
+      "target": "1287",
+      "value": 7
+      },
+      {
+      "source": "Writing / preparing presentations",
+      "target": "1287",
+      "value": 1
+      },
+      {
+      "source": "Meetups",
+      "target": "1287",
+      "value": 2
+      },
+      {
+      "source": "Brainstorming",
+      "target": "1343",
+      "value": 1
+      },
+      {
+      "source": "Software development",
+      "target": "1343",
+      "value": 1
+      },
+      {
+      "source": "Writing / preparing presentations",
+      "target": "1343",
+      "value": 1
+      },
+      {
+      "source": "Team meetings",
+      "target": "1343",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2368",
+      "value": 1
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2368",
+      "value": 2
+      },
+      {
+      "source": "Reading papers or other material",
+      "target": "2368",
+      "value": 1
+      },
+      {
+      "source": "Team meetings",
+      "target": "2404",
+      "value": 2
+      },
+      {
+      "source": "Team meetings",
+      "target": "2401",
+      "value": 4
+      },
+      {
+      "source": "Education event",
+      "target": "2399",
+      "value": 7
+      },
+      {
+      "source": "Education / outreach event",
+      "target": "2399",
+      "value": 7
+      },
+      {
+      "source": "Meetups",
+      "target": "2399",
+      "value": 4
+      },
+      {
+      "source": "Team meetings",
+      "target": "2398",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2397",
+      "value": 2
+      },
+      {
+      "source": "Team meetings",
+      "target": "2397",
+      "value": 20
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2397",
+      "value": 5
+      },
+      {
+      "source": "Meetups",
+      "target": "2397",
+      "value": 20
+      },
+      {
+      "source": "Writing / preparing presentations",
+      "target": "2397",
+      "value": 4
+      },
+      {
+      "source": "No iGEM work",
+      "target": "2397",
+      "value": 2
+      },
+      {
+      "source": "Project administration",
+      "target": "2397",
+      "value": 3
+      },
+      {
+      "source": "Education / outreach event",
+      "target": "2397",
+      "value": 7
+      },
+      {
+      "source": "Education event",
+      "target": "2397",
+      "value": 7
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2405",
+      "value": 3
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2405",
+      "value": 3
+      },
+      {
+      "source": "Project administration",
+      "target": "2405",
+      "value": 2
+      },
+      {
+      "source": "Education / outreach event",
+      "target": "2405",
+      "value": 5
+      },
+      {
+      "source": "No iGEM work",
+      "target": "2405",
+      "value": 1
+      },
+      {
+      "source": "Team meetings",
+      "target": "2405",
+      "value": 6
+      },
+      {
+      "source": "Education event",
+      "target": "2405",
+      "value": 7
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2408",
+      "value": 2
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2408",
+      "value": 2
+      },
+      {
+      "source": "Team meetings",
+      "target": "2408",
+      "value": 2
+      },
+      {
+      "source": "Education / outreach event",
+      "target": "2408",
+      "value": 2
+      },
+      {
+      "source": "Writing / preparing presentations",
+      "target": "2408",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2409",
+      "value": 2
+      },
+      {
+      "source": "Meetups",
+      "target": "2409",
+      "value": 7
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2409",
+      "value": 7
+      },
+      {
+      "source": "Team meetings",
+      "target": "2409",
+      "value": 6
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2410",
+      "value": 3
+      },
+      {
+      "source": "Education / outreach event",
+      "target": "2410",
+      "value": 5
+      },
+      {
+      "source": "Education event",
+      "target": "2410",
+      "value": 2
+      },
+      {
+      "source": "Developing protocols",
+      "target": "2410",
+      "value": 1
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2410",
+      "value": 2
+      },
+      {
+      "source": "Team meetings",
+      "target": "2410",
+      "value": 9
+      },
+      {
+      "source": "Meetups",
+      "target": "2382",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2391",
+      "value": 1
+      },
+      {
+      "source": "Team meetings",
+      "target": "2391",
+      "value": 5
+      },
+      {
+      "source": "Reading papers or other material",
+      "target": "2391",
+      "value": 3
+      },
+      {
+      "source": "Writing / preparing presentations",
+      "target": "2391",
+      "value": 3
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2391",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2393",
+      "value": 1
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2393",
+      "value": 1
+      },
+      {
+      "source": "Meetups",
+      "target": "2393",
+      "value": 1
+      },
+      {
+      "source": "Team meetings",
+      "target": "2394",
+      "value": 6
+      },
+      {
+      "source": "Meetups",
+      "target": "2394",
+      "value": 8
+      },
+      {
+      "source": "Education event",
+      "target": "2394",
+      "value": 6
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2394",
+      "value": 8
+      },
+      {
+      "source": "Reading papers or other material",
+      "target": "2394",
+      "value": 1
+      },
+      {
+      "source": "Lab maintenance",
+      "target": "2394",
+      "value": 1
+      },
+      {
+      "source": "Collecting data / running assays",
+      "target": "2394",
+      "value": 1
+      },
+      {
+      "source": "Analysing results",
+      "target": "2394",
+      "value": 1
+      },
+      {
+      "source": "Preparing samples",
+      "target": "2394",
+      "value": 1
+      },
+      {
+      "source": "Software development",
+      "target": "2394",
+      "value": 1
+      },
+      {
+      "source": "Education / outreach event",
+      "target": "2394",
+      "value": 6
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2394",
+      "value": 4
+      },
+      {
+      "source": "Hardware development",
+      "target": "2394",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2395",
+      "value": 1
+      },
+      {
+      "source": "Reading papers or other material",
+      "target": "2395",
+      "value": 1
+      },
+      {
+      "source": "Writing / preparing presentations",
+      "target": "2395",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2396",
+      "value": 1
+      },
+      {
+      "source": "Education / outreach event",
+      "target": "2396",
+      "value": 1
+      },
+      {
+      "source": "Developing protocols",
+      "target": "2396",
+      "value": 1
+      },
+      {
+      "source": "Education event",
+      "target": "2396",
+      "value": 1
+      },
+      {
+      "source": "Team meetings",
+      "target": "2396",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2407",
+      "value": 2
+      },
+      {
+      "source": "Education / outreach event",
+      "target": "2407",
+      "value": 2
+      },
+      {
+      "source": "Team meetings",
+      "target": "2407",
+      "value": 2
+      },
+      {
+      "source": "Hardware development",
+      "target": "2407",
+      "value": 2
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2407",
+      "value": 2
+      },
+      {
+      "source": "Planning tasks",
+      "target": "2406",
+      "value": 2
+      },
+      {
+      "source": "Reading papers or other material",
+      "target": "2406",
+      "value": 1
+      },
+      {
+      "source": "Brainstorming",
+      "target": "2406",
+      "value": 2
+      },
+      {
+      "source": "Team meetings",
+      "target": "2406",
+      "value": 3
+      },
+      {
+      "source": "Meetups",
+      "target": "2406",
+      "value": 1
+      }
+      ]
+      };
 
 
 
+      var labels = d3.set(graph.nodes.map(function(d) {
+            return d.group;
+        }));
+
+      var colourScale = d3.scaleOrdinal()
+            .domain(labels)
+            .range(['#66c2a5','#fc8d62']);
+
+        var shapeScale = d3.scaleOrdinal()
+            .domain(labels)
+            .range([d3_shape.symbolCircle, d3_shape.symbolSquare]);
 
 
 
+        function drawNode(d) {
+
+            var symbol = d3_shape.symbol()
+                .type(shapeScale(d.type))
+                .size(5*d.degree*d.degree)
+                .context(ctx);
+
+            ctx.translate(d.x, d.y);
+            ctx.fillStyle = colourScale(d.type);
+            ctx.beginPath();
+            symbol();
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+            ctx.translate(-d.x, -d.y);
+            ctx.font = "10px Open Sans";
+        ctx.fillStyle = "Black";
+        ctx.textAlign = "center";
+            ctx.fillText(d.id,d.x,d.y);
+      }
+
+        simulation
+        .nodes(graph.nodes)
+        .on("tick", update)
+        .force("link")
+        .links(graph.links);
 
 
-</script>
+      canvas
+          .call(d3.drag()
+            .container(canvas.node())
+            .subject(dragsubject)
+            .on("start", dragstarted)
+            .on("drag", dragged)
+            .on("end", dragended));
 
-</body>
+      function update() {
+        ctx.clearRect(0,0,width,height);
+        ctx.fillStyle = '#fc8d62';
+            ctx.beginPath();
+            ctx.rect(100, 75, 10, 10);
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+            ctx.font = "12px Open Sans";
+        ctx.fillStyle = "Black";
+        ctx.textAlign = "center";
+            ctx.fillText('USER-ID',150,85);
+
+
+            ctx.fillStyle = '#66c2a5';
+            ctx.beginPath();
+            ctx.arc(105, 60, 6, 0, 2*Math.PI);
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+            ctx.font = "12px Open Sans";
+        ctx.fillStyle = "Black";
+        ctx.textAlign = "center";
+            ctx.fillText('TASKS',150,65);
+
+        ctx.fillStyle = '#aaa'
+        graph.links.forEach(drawLink);
+
+        ctx.lineWidth=1;
+        ctx.globalAlpha = 1;
+        graph.nodes.forEach(drawNode);
+
+      }
+
+      function dragsubject() {
+        return simulation.find(d3.event.x, d3.event.y);
+      }
+
+      function dragstarted() {
+        if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+        d3.event.subject.fx = d3.event.subject.x;
+        d3.event.subject.fy = d3.event.subject.y;
+        console.log(d3.event.subject);
+      }
+
+      function dragged() {
+        d3.event.subject.fx = d3.event.x;
+        d3.event.subject.fy = d3.event.y;
+      }
+
+      function dragended() {
+        if (!d3.event.active) simulation.alphaTarget(0);
+        d3.event.subject.fx = null;
+        d3.event.subject.fy = null;
+      }
+
+
+      function drawLink(l) {
+
+        ctx.beginPath();
+        ctx.moveTo(l.source.x,l.source.y);
+        ctx.lineTo(l.target.x,l.target.y);
+        ctx.lineWidth = l.value
+        ctx.globalAlpha = 0.7;
+        ctx.strokeStyle = '#aaa';
+        ctx.stroke();
+      }
+    </script>
+
+  </body>
 </html>

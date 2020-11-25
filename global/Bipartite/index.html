@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bipartite Diagram</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -31,7 +33,7 @@
 				.force("x",d3.forceX(width/2))
 				// .force("x",d3.forceX(function (d) {
 					// return x(d.group);
-				// }).strength(0.2))                  // This her increases the separation between two types of nodes
+				// }).strength(0.2))                  // This here increases the separation between two types of nodes
 				.force("y",d3.forceY(0.3*height))
 				.force("collide", d3.forceCollide(35))
 				.force("charge",d3.forceManyBody()
@@ -72,7 +74,7 @@
             ctx.fill();
             ctx.stroke();
             ctx.translate(-d.x, -d.y);
-            ctx.font = "10px Comic Sans MS";
+            ctx.font = "10px Open Sans";
 			ctx.fillStyle = "Black";
 			ctx.textAlign = "center";
             ctx.fillText(d.id,d.x,d.y);
@@ -101,7 +103,7 @@
 	        ctx.closePath();
 	        ctx.fill();
 	        ctx.stroke();
-	        ctx.font = "12px Comic Sans MS";
+	        ctx.font = "12px Open Sans";
 			ctx.fillStyle = "Black";
 			ctx.textAlign = "center";
 	        ctx.fillText('USERS',150,85);
@@ -113,7 +115,7 @@
 	        ctx.closePath();
 	        ctx.fill();
 	        ctx.stroke();
-	        ctx.font = "12px Comic Sans MS";
+	        ctx.font = "12px Open Sans";
 			ctx.fillStyle = "Black";
 			ctx.textAlign = "center";
 	        ctx.fillText('TASKS',150,65);
@@ -163,13 +165,6 @@
 			ctx.strokeStyle = '#aaa';
 			ctx.stroke();
 		}
-
-
-
-
-
-
-
 
 	</script>
 
