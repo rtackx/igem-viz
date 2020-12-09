@@ -4,7 +4,7 @@ export default function define(runtime, observer) {
   const fileAttachments = new Map([["bubble@1.json",new URL("./bubble.json",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer("title_circle")).define(["md"], function(md){return(
-md`# User-task distribution across teams`
+md`# Task distribution across teams`
 )});
   main.variable(observer()).define(["md"], function(md){return(
 md`# Igem Team task Distribution

@@ -4,7 +4,7 @@ export default function define(runtime, observer) {
   const fileAttachments = new Map([["tasks@2.csv",new URL("./tasks.csv",import.meta.url)]]);
   main.builtin("FileAttachment", runtime.fileAttachments(name => fileAttachments.get(name)));
   main.variable(observer("title_bgraph")).define(["md"], function(md){return(
-md`# Tasks performed by all teams`
+md`# What are the most performed tasks?`
 )});
   main.variable(observer()).define(["md"], function(md){return(
 md`# Tasks done in all teams
