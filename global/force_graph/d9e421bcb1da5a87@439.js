@@ -75,7 +75,12 @@ select({
 
 
   const svg = d3.create("svg")
-      .attr("viewBox", [0, 0, width, height]);
+  .attr("width", "60%")
+  .attr("viewBox", [0, 0, width, height])
+  //.attr("viewBox", `-${width / 2} -${height / 2} ${width} ${height}`)
+  .style("display", "block")
+  .style("margin", "0 -14px")
+
 
   const g = svg.append("g")
 
