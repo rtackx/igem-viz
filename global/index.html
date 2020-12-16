@@ -18,7 +18,8 @@
         background-color: rgba(0,0,0,0.0);
       }
       .wrapper {
-        position: relative;
+        /* position: relative; */
+        overflow: hidden;
         width:80%;
         transform: translate(11%,0);
       }
@@ -61,15 +62,18 @@
 
       /* circle packing */
       #bubblegraph {
-        /* width: 100%; */
-        /* transform: translate(50%,0); */
-        /* float: left; */
+        /* width: 100%;
+        transform: translate(50%,0);
+        float: left; */
       }
+
       #bubbletext {
         color: black;
-        position: absolute;
+        /* position: relative; */
+        float: right;
         width: 30%;
         left: 70%;
+        height: 100%;
       }
 
       /* bar graph */
